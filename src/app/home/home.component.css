@@ -1,0 +1,27 @@
+.lesspadding{
+    padding-left:0;
+    padding-right:0;
+}
+
+.fullsize{
+    width:100%;
+}
+
+.fa{
+    background: white;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.fa:hover{
+    background: yellow;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
