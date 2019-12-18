@@ -55,6 +55,7 @@ import { PvtldtcompanyannualComponent } from './pvtldtcompanyannual/pvtldtcompan
 import { LimitedliapartershipannulComponent } from './limitedliapartershipannul/limitedliapartershipannul.component';
 import { Forminc22aannualComponent } from './forminc22aannual/forminc22aannual.component';
 import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannual.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -112,7 +113,8 @@ const routes: Routes = [
   {path:'pvtltdcompanyannual', component:PvtldtcompanyannualComponent},
   {path:'limitedliapartershipannul', component:LimitedliapartershipannulComponent},
   {path:'forminc22aannual', component:Forminc22aannualComponent},
-  {path:'formdir3kycannual', component:Formdir3kycannualComponent}
+  {path:'formdir3kycannual', component:Formdir3kycannualComponent},
+  {path:'footer', component:FooterComponent}
 ];
 
 @NgModule({

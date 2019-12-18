@@ -58,6 +58,7 @@ import { PvtldtcompanyannualComponent } from './pvtldtcompanyannual/pvtldtcompan
 import { LimitedliapartershipannulComponent } from './limitedliapartershipannul/limitedliapartershipannul.component';
 import { Forminc22aannualComponent } from './forminc22aannual/forminc22aannual.component';
 import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannual.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +117,8 @@ import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannua
     PvtldtcompanyannualComponent,
     LimitedliapartershipannulComponent,
     Forminc22aannualComponent,
-    Formdir3kycannualComponent
+    Formdir3kycannualComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

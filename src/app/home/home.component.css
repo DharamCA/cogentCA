@@ -3,6 +3,26 @@
     padding-right:0;
 }
 
+.col.lesspadding{
+    background: url(../../assets/images/banner.jpg) 0 0 no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: 100% 700px;
+    vertical-align: middle;
+}
+
+.figure-align{
+    vertical-align: middle;
+}
+
+.figure-align{
+    position: relative;
+}
+
+.figure-align h4{
+    text-align: center;
+}
+
 .fullsize{
     width:100%;
 }
@@ -10,18 +30,36 @@
 .fa{
     background: white;
     border-radius: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     font-size: 30px;
+    width:70px;
+    height: 70px;
+    line-height: 72px;
 }
 
 .fa:hover{
     background: yellow;
     border-radius: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     font-size: 30px;
 }
 
 a{
     text-decoration: none;
     color: #000000;
+}
+
+.fa.fa-copyrights{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+    vertical-align: middle;
+    line-height: 72px;
+}
+
+.fssai{
+    font-style: italic;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    font-family: serif !important;
 }
