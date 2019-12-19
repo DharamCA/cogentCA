@@ -88,6 +88,7 @@ a{
     font-weight: 600;
     width:185px;
     text-align: center;
+    cursor: pointer;
 }
 
 .arrangecall:hover, .chat:hover{
