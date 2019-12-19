@@ -6,6 +6,7 @@
 a.nav-link{
     color: #000000;
     white-space: nowrap;
+    font-weight: 600;
 }
 
 a{
@@ -41,7 +42,7 @@ a{
     top: 0;
     background: #000;
     left: 233px;
-    columns: #000000;;
+    font-weight: 600;
 }
 
 .dropdown-item {
@@ -88,4 +89,34 @@ a{
 
 .dropdown-menu.show .nav-link.dropdown-toggle:hover{
     background: #cccccc;
+}
+
+.nav-link.no-hover:hover{
+    background: #000000;
+    color: #cccccc !important;
+    cursor: pointer;
+}
+
+li.nav-item, .text-uppercase{
+    text-transform: uppercase;
+}
+
+.logo1{
+    background: #003399;
+    padding: 5px 5px 8px 5px;
+    color: #ffcc33;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.logo2{
+    background: #ffcc33;
+    padding: 5px 5px 8px 5px;
+    color: #003399;
+    font-size: 25px;
+    display: inline-block;
+}
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
 }

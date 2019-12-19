@@ -1,6 +1,8 @@
 .lesspadding{
     padding-left:0;
     padding-right:0;
+    display: grid;
+    position: relative;
 }
 
 .col.lesspadding{
@@ -17,6 +19,7 @@
 
 .figure-align{
     position: relative;
+    font-size: 35px;
 }
 
 .figure-align h4{
@@ -38,7 +41,7 @@
 }
 
 .fa:hover{
-    background: yellow;
+    background: #ffcc33;
     border-radius: 100%;
     /* padding: 15px; */
     font-size: 30px;
@@ -62,4 +65,36 @@ a{
     font-weight: 400 !important;
     text-transform: none !important;
     font-family: serif !important;
+}
+
+.mainpage{
+    margin: 0 auto;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    grid-row: 1;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+    text-align: center;
+    
+}
+
+.arrangecall, .chat{
+    background: #003399;
+    text-transform: uppercase;
+    font-weight: 600;
+    width:185px;
+    text-align: center;
+}
+
+.arrangecall:hover, .chat:hover{
+    background: #ffcc33;
+    color:#003399;
+}
+
+.arrangecall{
+    margin-right:5px;
 }
