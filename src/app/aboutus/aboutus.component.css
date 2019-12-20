@@ -1,8 +1,8 @@
 .aboutimage{
     background: url(../../assets/images/355c7fc2fc2dfd17e0bea24f604e82ca.jpg) 0 0 no-repeat;
     width: 100%;
-    height: 700px;
-    background-size: 100% 700px;
+    height: 800px;
+    background-size: 100% 100%;
     vertical-align: middle;
     opacity: .3;
 }
@@ -37,12 +37,12 @@
 }
 
 .bgcolor .col{
-    background: greenyellow;
+    background: #ffcc33;
     padding-top: 20px;
 }
 
 .bgcolor .col:nth-child(2){
-    background: green;
+    background: #bf9926;
 }
 
 .box-center{

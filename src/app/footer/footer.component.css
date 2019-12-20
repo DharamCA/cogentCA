@@ -33,3 +33,43 @@ ul li a:hover{
 h4{
     font-size: 20px;
 }
+
+.link-text h2{
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.link-text li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link-text li:last-child{
+    margin-right: 0;
+}
+
+.link-text li .fa{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #cccccc;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.link-text li .fa:hover{
+    color: #666666;
+    background: #ffcc33;
+}
+
+.margin-auto{
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+}
