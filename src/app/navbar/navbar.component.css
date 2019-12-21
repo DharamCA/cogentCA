@@ -101,15 +101,15 @@ li.nav-item, .text-uppercase{
     text-transform: uppercase;
 }
 
-.logo1{
+.logo2{
     background: #003399;
     padding: 5px 5px 8px 5px;
-    color: #ffcc33;
+    color: #ffffff;
     font-size: 25px;
     display: inline-block;
 }
 
-.logo2{
+.logo1{
     background: #ffcc33;
     padding: 5px 5px 8px 5px;
     color: #003399;

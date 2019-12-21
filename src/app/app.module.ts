@@ -59,6 +59,7 @@ import { LimitedliapartershipannulComponent } from './limitedliapartershipannul/
 import { Forminc22aannualComponent } from './forminc22aannual/forminc22aannual.component';
 import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannual.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConsultComponent } from './consult/consult.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +119,8 @@ import { FooterComponent } from './footer/footer.component';
     LimitedliapartershipannulComponent,
     Forminc22aannualComponent,
     Formdir3kycannualComponent,
-    FooterComponent
+    FooterComponent,
+    ConsultComponent
   ],
   imports: [
     BrowserModule,
