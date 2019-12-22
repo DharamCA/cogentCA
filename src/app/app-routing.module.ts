@@ -57,6 +57,8 @@ import { Forminc22aannualComponent } from './forminc22aannual/forminc22aannual.c
 import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannual.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConsultComponent } from './consult/consult.component';
+import { BusinessvaluationComponent } from './businessvaluation/businessvaluation.component';
+import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.component';
 
 
 const routes: Routes = [
@@ -116,7 +118,10 @@ const routes: Routes = [
   {path:'forminc22aannual', component:Forminc22aannualComponent},
   {path:'formdir3kycannual', component:Formdir3kycannualComponent},
   {path:'footer', component:FooterComponent},
-  {path:'consult', component:ConsultComponent}
+  {path:'consult', component:ConsultComponent},
+  {path:'businessvaluation', component:BusinessvaluationComponent},
+  {path:'corporatefinance', component:CorporatefinanceComponent}
+  
 ];
 
 @NgModule({

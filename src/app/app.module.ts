@@ -60,6 +60,8 @@ import { Forminc22aannualComponent } from './forminc22aannual/forminc22aannual.c
 import { Formdir3kycannualComponent } from './formdir3kycannual/formdir3kycannual.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConsultComponent } from './consult/consult.component';
+import { BusinessvaluationComponent } from './businessvaluation/businessvaluation.component';
+import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +122,9 @@ import { ConsultComponent } from './consult/consult.component';
     Forminc22aannualComponent,
     Formdir3kycannualComponent,
     FooterComponent,
-    ConsultComponent
+    ConsultComponent,
+    BusinessvaluationComponent,
+    CorporatefinanceComponent
   ],
   imports: [
     BrowserModule,
