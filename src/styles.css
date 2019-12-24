@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-p{
+p, li, h1, h2, h3, h4, h5, h6, div{
+    font-family: sans-serif !important;
+}
+
+p, li{
     font-size: 14px;
+}
+
+small{
+    font-size: 15px;
+}
+
+.list-no-style{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
 }
