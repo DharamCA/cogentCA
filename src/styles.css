@@ -17,3 +17,49 @@ small{
     padding-left: 0;
     margin-left: 0;
 }
+
+ul.list-hover li{
+    padding: 5px;
+}
+
+ul.list-hover li:hover, img.list-hover:hover, .col.list-hover:hover{
+    box-shadow: 0 0 5px 5px #cccccc;
+    transition: ease-in box-shadow 0.5s;
+
+    /* animation: list-box 2s ease-in; */
+}
+
+.margin-auto{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.margin-auto tr:hover{
+    background: #cccccc;
+    
+}
+
+
+@keyframes list-box{
+    from{
+        box-shadow: 0 0 0 0 #cccccc;
+        background: none;
+    }
+    
+    to{
+        box-shadow: 0 0 5px 5px #cccccc;
+        background: #cccccc;
+    }
+}
+
+@keyframes animatethings{
+    from{
+        background: none;
+        color:#ffffff;
+    }
+    
+    to{
+        background: #ffcc33;
+        color: #000000;
+    }
+}
