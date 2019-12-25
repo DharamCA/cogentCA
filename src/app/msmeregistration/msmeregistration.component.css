@@ -1,0 +1,95 @@
+.sidenot-2{
+    padding: 20px;
+    box-shadow: 0 0 5px 5px #cccccc;
+    background: #d4e4ef;
+    margin: 25% 0 0 0;
+}
+
+.bg-green{
+    background: #d4e4ef;
+}
+.contatcform{
+    background: #000000;
+    padding: 20px;
+    margin: 25% 0 0 0;
+}
+
+.fa-pencil{
+    font-size: 25px;
+    margin-bottom: 30px;
+    width: 55px;
+    height: 55px;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    border-radius: 100%;
+}
+
+.service-box:hover .fa-pencil{
+    background: #ffcc33;
+}
+
+h5{
+    font-size: 18px;
+}
+
+.bg-black{
+    background: #000000;
+    color: #ffffff;
+}
+
+h2.border-bottom{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 2px #ffcc33 !important;
+}
+
+.width-300{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.bg-yellow{
+    background: #ffcc33;
+}
+
+.box1{
+    background: #000000;
+    padding: 15px;
+}
+
+.box2{
+    padding: 15px;
+}
+
+.middle-panel{
+    height: auto;
+    margin-top: -21px;
+}
+
+.middle-panel .box1{
+    background: #ffcc33 !important;
+}
+
+.yellow-color{
+    color: #ffcc33 !important;
+}
+
+.document-box{
+    background: #000000 !important;
+    padding: 30px;
+    width: 250px;
+    height: 300px;
+}
+
+.document-box:hover{
+    background: #ffcc33 !important;
+    padding: 50px;
+    position: absolute;
+}
+
+
+.width-100{
+    width: 100%;
+}
