@@ -73,3 +73,28 @@ h4{
     margin-right: auto;
     width: 260px;
 }
+
+.footer{
+    display: table;
+    width: 100%;
+}
+
+.footer .footer-left{
+    font-size: 40px;
+}
+
+.footer .footer-left .fa{
+    margin-right: 10px;
+    color: #ffcc33;
+}
+
+.footer .footer-left, .footer .footer-body{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.footer .footer-heading{
+    color: #000000 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
