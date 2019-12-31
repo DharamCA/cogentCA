@@ -30,6 +30,11 @@ a{
 .subnav-align{
     position: relative;
     white-space: nowrap;
+    font-weight: 400;
+}
+
+.nav-link.subnav-align, .nav-link.subnav{
+    font-weight: 400 !important;
 }
 
 /* a.nav-link.dropdown-toggle{
