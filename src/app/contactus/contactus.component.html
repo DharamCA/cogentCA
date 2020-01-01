@@ -1,0 +1,118 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col less-padding">
+            <img class="width-100" src="../../assets/images/contact.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+            <h4><b>CONNECT WITH US</b></h4>
+
+                <p>Our Headquarter is in New Delhi with presence in multiple states, serving PAN INDIA Business community. You can reach us by any mean:</p>
+                
+                <p>Explore our social media channels to read about E-startupIndia latest insights, our unique compliance update methods and our differentiated approach to serving clients makes us different in our industry.</p>
+        </div>
+    </div>
+    <div class="row pt-5 pb-5">
+        <div class="col box"><p>Address:</p></div>
+        <div class="col box"><p>Phone No.</p></div>
+        <div class="col box">Email ID:</div>
+    </div>
+    <div class="row pt-5 pb-5">
+        <div class="col-6 margin-auto">
+            <h3 class="text-center mt-3 mb-3"><b>FOR ANY ENQUIRY</b></h3>
+                <form [formGroup]="contactus" novalidate class="form">
+                        <div class="ui-form-wraper">
+                           <div class="form-group">
+                            <div class="form-group">
+                                <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                <input
+                                placeholder="Name"
+                                formControlName="name" 
+                                name="name" 
+                                type="text" 
+                                class="form-control" autocomplete="off">
+                                <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                    Name not be blank
+                                </span>
+                                
+                            </div>
+                           </div>
+                           <div class="form-group">
+                            <div class="form-group">
+                                <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                <input
+                                placeholder="Email Address" formControlName="email" 
+                                name="email" 
+                                type="email"
+                                class="form-control" autocomplete="off">
+                                <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                        <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                Email not be blank
+                                        </span>
+                                        <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                    Email invalid
+                                        </span>
+                                </div>
+                        </div>
+                           </div>
+                           <div class="form-group">
+                            <div class="form-group">
+                                <!-- <label for="phone">Subject<span class="text-danger">*</span></label>-->
+                                <input 
+                                placeholder="Mobile No." formControlName="mobile" 
+                                name="mobile" 
+                                type="text" 
+                                class="form-control" autocomplete="off">
+                                <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                        Mobile will not be blank
+                                    </span>
+                            </div>
+                           </div>
+                           <div class="form-group">
+                                <div class="form-group">
+                                    <!-- <label for="subject">Subject<span class="text-danger">*</span></label>-->
+                                    <input 
+                                    placeholder="Subject" formControlName="subject" 
+                                    name="subject" 
+                                    type="text" 
+                                    class="form-control" autocomplete="off">
+                                    <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                            Subject will not be blank
+                                        </span>
+                                </div>
+                               </div>
+                               <div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="subject">Subject<span class="text-danger">*</span></label>-->
+                                        <textarea rows="6"
+                                        placeholder="Message" formControlName="message" 
+                                        name="message" 
+                                        type="text" 
+                                        class="form-control" autocomplete="off"></textarea>
+                                        <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                Message will not be blank
+                                            </span>
+                                    </div>
+                                   </div>
+                       </div>
+                       <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block">Submit</button>
+                    </form>
+                    
+                    <!-- <table>
+                        <tr *ngFor="let post of posts">
+                            <td>{{post.name}}</td>
+                            <td>{{post.email}}</td>
+                            <td>{{post.mobile}}</td>
+                        </tr>
+                    
+                    </table> -->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>    

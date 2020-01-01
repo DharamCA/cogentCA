@@ -65,6 +65,12 @@ import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.c
 import { QueryformComponent } from './queryform/queryform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactusComponent } from './contactus/contactus.component';
+import { CareerComponent } from './career/career.component';
+import { TermconditionComponent } from './termcondition/termcondition.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
+import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
 
 @NgModule({
   declarations: [
@@ -128,7 +134,13 @@ import { HttpClientModule } from '@angular/common/http';
     ConsultComponent,
     BusinessvaluationComponent,
     CorporatefinanceComponent,
-    QueryformComponent
+    QueryformComponent,
+    ContactusComponent,
+    CareerComponent,
+    TermconditionComponent,
+    PrivacypolicyComponent,
+    RefundpolicyComponent,
+    ConfidentialpolicyComponent
   ],
   imports: [
     BrowserModule,

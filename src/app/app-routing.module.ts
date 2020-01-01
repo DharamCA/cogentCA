@@ -60,6 +60,12 @@ import { ConsultComponent } from './consult/consult.component';
 import { BusinessvaluationComponent } from './businessvaluation/businessvaluation.component';
 import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.component';
 import { QueryformComponent } from './queryform/queryform.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { CareerComponent } from './career/career.component';
+import { TermconditionComponent } from './termcondition/termcondition.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
+import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
 
 
 const routes: Routes = [
@@ -122,7 +128,13 @@ const routes: Routes = [
   {path:'consult', component:ConsultComponent},
   {path:'businessvaluation', component:BusinessvaluationComponent},
   {path:'corporatefinance', component:CorporatefinanceComponent},
-  {path:'queryform', component:QueryformComponent}
+  {path:'queryform', component:QueryformComponent},
+  {path:'contactus', component:ContactusComponent},
+  {path:'career', component:CareerComponent},
+  {path:'termcondition', component:TermconditionComponent},
+  {path:'privacypolicy', component:PrivacypolicyComponent},
+  {path:'refundpolicy', component:RefundpolicyComponent},
+  {path:'confidentialpolicy', component:ConfidentialpolicyComponent}
   
 ];
 
