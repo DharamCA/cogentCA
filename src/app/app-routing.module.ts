@@ -59,6 +59,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ConsultComponent } from './consult/consult.component';
 import { BusinessvaluationComponent } from './businessvaluation/businessvaluation.component';
 import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.component';
+import { QueryformComponent } from './queryform/queryform.component';
 
 
 const routes: Routes = [
@@ -120,7 +121,8 @@ const routes: Routes = [
   {path:'footer', component:FooterComponent},
   {path:'consult', component:ConsultComponent},
   {path:'businessvaluation', component:BusinessvaluationComponent},
-  {path:'corporatefinance', component:CorporatefinanceComponent}
+  {path:'corporatefinance', component:CorporatefinanceComponent},
+  {path:'queryform', component:QueryformComponent}
   
 ];
 

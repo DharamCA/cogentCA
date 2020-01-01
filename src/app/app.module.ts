@@ -62,6 +62,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ConsultComponent } from './consult/consult.component';
 import { BusinessvaluationComponent } from './businessvaluation/businessvaluation.component';
 import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.component';
+import { QueryformComponent } from './queryform/queryform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -124,11 +127,15 @@ import { CorporatefinanceComponent } from './corporatefinance/corporatefinance.c
     FooterComponent,
     ConsultComponent,
     BusinessvaluationComponent,
-    CorporatefinanceComponent
+    CorporatefinanceComponent,
+    QueryformComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

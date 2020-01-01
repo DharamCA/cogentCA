@@ -1,0 +1,61 @@
+<form [formGroup]="login" novalidate class="form">
+    <div class="ui-form-wraper">
+       <p class="text-center text-white">{{title}}</p>
+       <div class="form-group">
+        <div class="form-group">
+            <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+            <input
+            placeholder="Name"
+            formControlName="name" 
+            name="name" 
+            type="text" 
+            class="form-control" autocomplete="off">
+            <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                Name not be blank
+            </span>
+            
+        </div>
+       </div>
+       <div class="form-group">
+        <div class="form-group">
+            <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+            <input
+            placeholder="Email Address" formControlName="email" 
+            name="email" 
+            type="email"
+            class="form-control" autocomplete="off">
+            <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                    <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                            Email not be blank
+                    </span>
+                    <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                Email invalid
+                    </span>
+            </div>
+    </div>
+       </div>
+       <div class="form-group">
+        <div class="form-group">
+            <!-- <label for="phone">Subject<span class="text-danger">*</span></label>-->
+            <input 
+            placeholder="Mobile No." formControlName="mobile" 
+            name="mobile" 
+            type="text" 
+            class="form-control" autocomplete="off">
+            <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                    Mobile will not be blank
+                </span>
+        </div>
+       </div>
+   </div>
+   <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+</form>
+
+<!-- <table>
+    <tr *ngFor="let post of posts">
+        <td>{{post.name}}</td>
+        <td>{{post.email}}</td>
+        <td>{{post.mobile}}</td>
+    </tr>
+
+</table> -->
