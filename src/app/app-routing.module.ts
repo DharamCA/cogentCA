@@ -66,6 +66,7 @@ import { TermconditionComponent } from './termcondition/termcondition.component'
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
 import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
+import { AdministratorpageComponent } from './administratorpage/administratorpage.component';
 
 
 const routes: Routes = [
@@ -134,7 +135,8 @@ const routes: Routes = [
   {path:'termcondition', component:TermconditionComponent},
   {path:'privacypolicy', component:PrivacypolicyComponent},
   {path:'refundpolicy', component:RefundpolicyComponent},
-  {path:'confidentialpolicy', component:ConfidentialpolicyComponent}
+  {path:'confidentialpolicy', component:ConfidentialpolicyComponent},
+  {path:'administratorpage', component:AdministratorpageComponent}
   
 ];
 

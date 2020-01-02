@@ -71,6 +71,7 @@ import { TermconditionComponent } from './termcondition/termcondition.component'
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
 import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
+import { AdministratorpageComponent } from './administratorpage/administratorpage.component';
 
 @NgModule({
   declarations: [
@@ -140,7 +141,8 @@ import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpo
     TermconditionComponent,
     PrivacypolicyComponent,
     RefundpolicyComponent,
-    ConfidentialpolicyComponent
+    ConfidentialpolicyComponent,
+    AdministratorpageComponent
   ],
   imports: [
     BrowserModule,

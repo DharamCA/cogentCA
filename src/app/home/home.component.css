@@ -22,6 +22,35 @@
     font-size: 35px;
 }
 
+@media screen and (max-width:480px){
+    .figure-align{
+        font-size: 20px;
+    }
+    .col.lesspadding{
+        height: 325px !important;
+        background-size: 100% 325px !important;
+    }
+
+    .mainpage[_ngcontent-mok-c3] {
+        margin: 0 auto;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        grid-row: 1;
+        top: 50%;
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        margin-top: -100px;
+        text-align: center;
+    }
+
+    .col.text-center{
+        width:100%;
+        flex-basis: unset;
+    }
+}
+
 .figure-align h4{
     text-align: center;
 }

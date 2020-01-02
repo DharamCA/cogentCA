@@ -98,3 +98,24 @@ h4{
     font-size: 16px;
     font-weight: 600;
 }
+
+@media screen and (max-width:480px){
+    .col.mobile{
+        display: block;
+        width:100%;
+        flex-basis: unset;
+    }
+
+    .footer-body{
+        vertical-align: middle !important;
+        text-align: left !important;
+    }
+
+    .footer-body h4{
+        text-align: left !important;
+    }
+
+    .footer-left{
+        width:50px !important;
+    }
+}
