@@ -18,14 +18,14 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $(".subnav-align").click(function(){
+      $(".subnav-align").mouseenter(function(){
         $(this).removeClass("hide");
         $(this).addClass("blocks");
       })
-      // $(".subnav-align").mouseleave(function(){
-      //   $(this).addClass("hide");
-      //   $(this).removeClass("blocks");
-      // })
+      $(".subnav-align").mouseleave(function(){
+        $(this).addClass("hide");
+        $(this).removeClass("blocks");
+      })
     })
   </script>
 </body>
