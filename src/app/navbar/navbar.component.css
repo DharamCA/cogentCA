@@ -1,6 +1,12 @@
 .col.less-padding{
     padding:0 !important;
-    background: #000000;
+    background: #cccccc;
+    color: #000000;
+}
+
+.text-black{
+    color: #000000 !important;
+    font-weight: 600;
 }
 
 a.nav-link{
@@ -9,12 +15,17 @@ a.nav-link{
     font-weight: 600;
 }
 
+.navbar-dark.navbar-nav.nav-link{
+    color:#000000 !important;
+}
+
 a{
     cursor: pointer;
+    color:#000000 !important;
 }
 
 .nav-item.dropdown.show a.nav-link{
-    color: #ffffff;
+    color: #000000;
     text-transform: none;
 }
 
@@ -23,8 +34,8 @@ a{
 } */
 
 .nav-link:hover{
-    background: #ffffff;
-    color: #000000 !important;
+    background: #003399;
+    color: #ffffff !important;
 }
 
 .subnav-align{
@@ -45,7 +56,7 @@ a{
     position: absolute;
     /* right: -105px; */
     top: 0;
-    background: #000;
+    background: #cccccc;
     left: 260px;
     font-weight: 600;
     padding: 2px 0;
@@ -53,11 +64,12 @@ a{
 
 .dropdown-item {
     padding: .5rem 1.5rem;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .dropdown-item:hover{
-    color: #000000 !important;
+    color: #ffffff !important;
+    background: #003399 !important;
 }
 
 .hide > .sublist-position{
@@ -84,7 +96,7 @@ a{
 }
 
 .dropdown-menu.show{
-    background: #000000;
+    background: #cccccc;
     padding: 0 0 2px 0 !important;
     border: none !important;
     width: 260px;
@@ -96,13 +108,13 @@ a{
 }
 
 .dropdown-menu.show .nav-link.dropdown-toggle:hover{
-    background: #cccccc;
+    background: #003399;
 }
 
 .nav-link.no-hover:hover{
-    background: #000000;
-    color: #cccccc !important;
-    cursor: pointer;
+    background: #cccccc;
+    color: #000000 !important;
+    /* cursor: pointer; */
 }
 
 li.nav-item, .text-uppercase{
@@ -110,17 +122,17 @@ li.nav-item, .text-uppercase{
 }
 
 .logo2{
-    background: #003399;
+    background: #ffcc33;
     padding: 5px;
-    color: #ffffff;
+    color: #003399;
     font-size: 25px;
     display: inline-block;
 }
 
 .logo1{
-    background: #ffcc33;
+    background: #003399;
     padding: 5px;
-    color: #003399;
+    color: #ffffff;
     font-size: 25px;
     display: inline-block;
 }

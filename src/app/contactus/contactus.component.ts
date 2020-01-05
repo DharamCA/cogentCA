@@ -13,7 +13,7 @@ export class ContactusComponent implements OnInit {
   ngOnInit() {
   }
 
-  contactus = new FormGroup({
+  login = new FormGroup({
     name : new FormControl('',Validators.required),
     email : new FormControl('', [
       Validators.required,

@@ -10,7 +10,6 @@
 
 .box{
     border:solid 1px #cccccc;
-    height: 150px;
     margin-right: 20px;
     padding: 25px;
 }
@@ -18,4 +17,8 @@
 .box:hover{
     border-color:#000000;
     transition: 1.5s border-color;
+}
+
+.fa{
+    font-size:35px;
 }
