@@ -44,6 +44,10 @@ ul.list-hover li:hover, img.list-hover:hover, .col.list-hover:hover{
     
 }
 
+.container-fluid.bg-green .row .col .container .row .col.text-center:nth-child(2) img{
+    width: 100%;
+    margin: 100px 0 0;
+}
 
 @keyframes list-box{
     from{

@@ -6,11 +6,11 @@
 }
 
 .col.lesspadding{
-    background: url(../../assets/images/banner.jpg) 0 0 no-repeat;
+    /* background: url(../../assets/images/banner.jpg) 0 0 no-repeat; */
     width: 100%;
-    height: 700px;
-    background-size: 100% 700px;
-    vertical-align: middle;
+    height: 100%;
+    /* background-size: 100% 700px;
+    vertical-align: middle; */
 }
 
 .figure-align{

@@ -146,3 +146,13 @@ li.nav-item, .text-uppercase{
     padding-left: .5rem;
     line-height: 31px;
 }
+
+@font-face {
+    font-family: algerian;
+    src: url('../../assets/font/Algerianregular.ttf');
+  }
+
+.catext{
+    font-family: algerian;
+    font-weight: 400;
+}
