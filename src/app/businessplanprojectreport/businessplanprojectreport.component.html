@@ -129,12 +129,12 @@
         <div class="col">
     <div class="container bg-black pt-5 pb-5">
         <div class="row">
-        <div class="col-sm-8">
+        <div class="col">
         <h2 class="border-bottom text-center"><strong>How Project/Business report help me in my business?</strong></h2>
         
         <p>Project/Business report is just like a dream book of any entrepreneur that he or she carrying a vision to take its business idea commercially successful to the next height. Business Plan demonstrate to stakeholders in brief about your organisation’s business idea, revenue model, profitability, market creditability. Find out more…</p>
         </div>
-        <div class="col-sm-4">
+        <!-- <div class="col-sm-4">
                         <form class="text-center" name="frmDownloadFreeGuide" action="" method="post" novalidate="novalidate">
                            <i class="icofont icofont-email fa-5x"></i>             
                             <p class="text-center" style="text-align: center;">Download Free Guide</p>
@@ -150,7 +150,7 @@
                                 </div>
                             <p class="text-center text-uppercase" style="text-align: center;">you are subscribing to our newsletters</p>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -162,18 +162,82 @@
 
             <div class="container-fluid pt-5 pb-5 bg-yellow">
                     <div class="row"><div class="col text-center">   
-                            <form method="post" name="frmHeaderSection1" action="" novalidate="novalidate">
-                                <h2 class="mb-5"><strong>Still confused! <br>Take Free Advisor Consultation</strong></h2>
+                             <h2 class="mb-5"><strong>Still confused! <br>Take Free Advisor Consultation</strong></h2>
                                 <div class="main width-300"> 
-                                <input type="hidden" name="position" value="2">
-                                        <input type="text" placeholder="First Name" name="client_name" maxlength="50" class="form-control"><br>
-                                        <input type="email" placeholder="Email Address" name="client_email_address" maxlength="50" class="form-control"><br>
-                                        <input type="tel" placeholder="Mobile No" name="client_mobile_number" maxlength="50" class="form-control"><br>
-                                
-                              
-                            <button type="submit" class="btn btn-default" name="HeaderContactForm" value="Header Contact" style="background:#4c4c4c;color:#fff;width:150px">Submit</button>
+                                    <form [formGroup]="login" novalidate class="form">
+                                        <div class="ui-form-wraper">
+                                           <p class="text-center text-white">{{title}}</p>
+                                           <div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                                <input
+                                                placeholder="Name"
+                                                formControlName="name" 
+                                                name="name" 
+                                                type="text" 
+                                                class="form-control" autocomplete="off">
+                                                <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                                    Name not be blank
+                                                </span>
+                                                
+                                            </div>
+                                           </div>
+                                           <div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                                <input
+                                                placeholder="Email Address" formControlName="email" 
+                                                name="email" 
+                                                type="email"
+                                                class="form-control" autocomplete="off">
+                                                <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                        <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                                Email not be blank
+                                                        </span>
+                                                        <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                                    Email invalid
+                                                        </span>
+                                                </div>
+                                        </div>
+                                           </div>
+                                           <div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                <input 
+                                                placeholder="Mobile No." formControlName="mobile" 
+                                                name="mobile" 
+                                                type="number" 
+                                                class="form-control" autocomplete="off">
+                                                <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                        Mobile will not be blank
+                                                    </span>
+                                                
+                                                
+                                                    <input hidden
+                                                    placeholder="Subject" formControlName="subject" 
+                                                    name="subject" 
+                                                    type="text" 
+                                                    class="form-control" autocomplete="off" value="Still confused about 'business plan project report'.">
+
+                                                    <input hidden
+                                                    placeholder="Message" formControlName="message" 
+                                                    name="message" 
+                                                    type="text" 
+                                                    class="form-control" autocomplete="off" value="Still confused about 'business plan project report', please provide Free Advisor Consultation.">
+                                            </div>
+                                           </div>
+
+
+
+
+
+
+
+                                       </div>
+                                       <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                                    </form>
                         </div>
-                        </form>    
+                          
                     </div>
                     </div>
                 </div>

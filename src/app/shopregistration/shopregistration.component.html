@@ -16,21 +16,59 @@
                         <div class="col">
                             <div class="contatcform">
                                                   
-                <form method="post" name="frmHeaderSection" action="" novalidate="novalidate">
-                     <div class="ui-form-01-wraper">
-                            <p class="text-center text-white">Arrange call from our business advisor</p>
-                        <div class="form-group">
-                            <input type="text" placeholder="Name" name="name" maxlength="50" class="form-control" formControlName="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address" name="email" maxlength="50" class="form-control" formControlName="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" placeholder="Mobile No" name="number" maxlength="50" class="form-control" formControlName="number">
-                        </div>
-                    </div>
-                    <button class="btn btn-primary form-control">Submit</button>
-                </form>
+                 <p class="text-center text-white">Arrange call from our business advisor</p>
+                            <form [formGroup]="login" novalidate class="form">
+                                <div class="ui-form-wraper">
+                                   <p class="text-center text-white">{{title}}</p>
+                                   <div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Name"
+                                        formControlName="name" 
+                                        name="name" 
+                                        type="text" 
+                                        class="form-control" autocomplete="off">
+                                        <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                            Name not be blank
+                                        </span>
+                                        
+                                    </div>
+                                   </div>
+                                   <div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Email Address" formControlName="email" 
+                                        name="email" 
+                                        type="email"
+                                        class="form-control" autocomplete="off">
+                                        <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                        Email not be blank
+                                                </span>
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                            Email invalid
+                                                </span>
+                                        </div>
+                                </div>
+                                   </div>
+                                   <div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                        <input 
+                                        placeholder="Mobile No." formControlName="mobile" 
+                                        name="mobile" 
+                                        type="number" 
+                                        class="form-control" autocomplete="off">
+                                        <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                Mobile will not be blank
+                                            </span>
+                                    </div>
+                                   </div>
+                               </div>
+                               <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                            </form>
            
         </div>
                         </div>
