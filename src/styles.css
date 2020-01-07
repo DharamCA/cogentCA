@@ -49,6 +49,24 @@ ul.list-hover li:hover, img.list-hover:hover, .col.list-hover:hover{
     margin: 100px 0 0;
 }
 
+@media screen and (max-width:480px){
+    .col.pr-0, .col.pl-0{
+        width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: unset;
+    padding-left: 0;
+    padding-right:0 !important;
+    margin-bottom: 21px;
+    }
+
+    .container-fluid.bg-green .row .col{
+        width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: unset;
+    }
+
+}
+
 @keyframes list-box{
     from{
         box-shadow: 0 0 0 0 #cccccc;
