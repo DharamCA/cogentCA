@@ -1,212 +1,74 @@
- <form [formGroup]="login" novalidate class="form">
-    <div class="ui-form-wraper">
-       <p class="text-center text-white">{{title}}</p>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Name"
-            formControlName="name" 
-            name="name" 
-            type="text" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
-                
-            </span>
-            
-        </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Email Address" formControlName="email" 
-            name="email" 
-            type="email"
-            class="form-control" autocomplete="off">
-            <div *ngIf="login.get('email').touched && login.get('email').invalid">
-                    <span class="text-danger"  *ngIf="login.get('email').errors.required">
-                            
-                    </span>
-                    <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
-                                
-                    </span>
-            </div>
-    </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input 
-            placeholder="Mobile No." formControlName="mobile" 
-            name="mobile" 
-            type="number" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
-                    
-                </span>
+<form [formGroup]="loginsss" novalidate class="form">
+  <div class="ui-form-wraper">
+     <p class="text-center text-white">{{title}}</p>
+     <div class="form-group">
+      <div class="form-group">
+          <input
+          placeholder="Name"
+          formControlName="name" 
+          name="name" 
+          type="text" 
+          class="form-control" autocomplete="off">
+          <span class="text-danger" *ngIf="loginsss.get('name').touched && loginsss.get('name').invalid">
+             
+          </span>
+          
+      </div>
+     </div>
+     <div class="form-group">
+      <div class="form-group">
+          <input
+          placeholder="Email Address" formControlName="email" 
+          name="email" 
+          type="email"
+          class="form-control" autocomplete="off">
+          <div *ngIf="loginsss.get('email').touched && loginsss.get('email').invalid">
+                  <span class="text-danger"  *ngIf="loginsss.get('email').errors.required">
+                          
+                  </span>
+                  <span class="text-danger"  *ngIf="loginsss.get('email').errors.pattern">
+                              
+                  </span>
+          </div>
+  </div>
+     </div>
+     <div class="form-group">
+      <div class="form-group">
+          <input 
+          placeholder="Mobile No." formControlName="mobile" 
+          name="mobile" 
+          type="number" 
+          class="form-control" autocomplete="off">
+          <span class="text-danger" *ngIf="loginsss.get('mobile').touched && loginsss.get('mobile').invalid">
+                  
+              </span>
+          
+          
+              <input hidden
+              placeholder="Subject" formControlName="subject" 
+              name="subject" 
+              type="text" 
+              class="form-control" autocomplete="off" [(ngModel)]="subject4">
 
-                <input hidden
-                placeholder="Subject" formControlName="subject" 
-                name="subject" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="subject1">
-
-                <input hidden
-                placeholder="Message" formControlName="message" 
-                name="message" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="message1">
-        </div>
-       </div>
-   </div>
-   <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
-</form> 
-
-
- <form [formGroup]="logins" novalidate class="form">
-    <div class="ui-form-wraper">
-       <p class="text-center text-white">{{title}}</p>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Name"
-            formControlName="name" 
-            name="name" 
-            type="text" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="logins.get('name').touched && logins.get('name').invalid">
-               
-            </span>
-            
-        </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Email Address" formControlName="email" 
-            name="email" 
-            type="email"
-            class="form-control" autocomplete="off">
-            <div *ngIf="logins.get('email').touched && logins.get('email').invalid">
-                    <span class="text-danger"  *ngIf="logins.get('email').errors.required">
-                            
-                    </span>
-                    <span class="text-danger"  *ngIf="logins.get('email').errors.pattern">
-                                
-                    </span>
-            </div>
-    </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input 
-            placeholder="Mobile No." formControlName="mobile" 
-            name="mobile" 
-            type="number" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="logins.get('mobile').touched && logins.get('mobile').invalid">
-                    
-                </span>
-            
-            
-                <input hidden
-                placeholder="Subject" formControlName="subject" 
-                name="subject" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="subject2">
-
-                <input hidden
-                placeholder="Message" formControlName="message" 
-                name="message" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="message2">
-        </div>
-       </div>
-    </div>
-   <button [disabled]="logins.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit1()">Submit</button>
-</form> 
-
- <form [formGroup]="loginss" novalidate class="form">
-    <div class="ui-form-wraper">
-       <p class="text-center text-white">{{title}}</p>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Name"
-            formControlName="name" 
-            name="name" 
-            type="text" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="loginss.get('name').touched && loginss.get('name').invalid">
-               
-            </span>
-            
-        </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input
-            placeholder="Email Address" formControlName="email" 
-            name="email" 
-            type="email"
-            class="form-control" autocomplete="off">
-            <div *ngIf="loginss.get('email').touched && loginss.get('email').invalid">
-                    <span class="text-danger"  *ngIf="loginss.get('email').errors.required">
-                            
-                    </span>
-                    <span class="text-danger"  *ngIf="loginss.get('email').errors.pattern">
-                                
-                    </span>
-            </div>
-    </div>
-       </div>
-       <div class="form-group">
-        <div class="form-group">
-            <input 
-            placeholder="Mobile No." formControlName="mobile" 
-            name="mobile" 
-            type="number" 
-            class="form-control" autocomplete="off">
-            <span class="text-danger" *ngIf="loginss.get('mobile').touched && loginss.get('mobile').invalid">
-                    
-                </span>
-            
-            
-                <input hidden
-                placeholder="Subject" formControlName="subject" 
-                name="subject" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="subject3">
-
-                <input hidden
-                placeholder="Message" formControlName="message" 
-                name="message" 
-                type="text" 
-                class="form-control" autocomplete="off" [(ngModel)]="message3">
-        </div>
-       </div>
-    </div>
-   <button [disabled]="loginss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit2()">Submit</button>
+              <input hidden
+              placeholder="Message" formControlName="message" 
+              name="message" 
+              type="text" 
+              class="form-control" autocomplete="off" [(ngModel)]="message4">
+      </div>
+     </div>
+  </div>
+ <button [disabled]="loginsss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit3()">Submit</button>
 </form> 
 
 
 
 <!-- <div>
-  title:"Ram";
-  posts: any;
-  data: any;
-  subject1 = "Arrange a call about 'business plan project report'";
-  message1 = "I am Still confused about 'business plan project report', please arrange a call for the same.";
-  subject2 = "Still confused about 'business plan project report'";
-  message2 = "Still confused about 'business plan project report', please provide Free Advisor Consultation.";
-  subject3 = "Complete List of Document required";
-  message3 = "Please share the list of required document for the same.";
+  subject4 = "Not Founs Ansrwe our Question";
+  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the same.";
 
-  constructor(private products: FormService, private router: Router) { }
 
-  ngOnInit() {
-    this.getdata();
-  }
-
-  login = new FormGroup({
+  loginsss = new FormGroup({
     name : new FormControl('',Validators.required),
     email : new FormControl('', [
       Validators.required,
@@ -218,68 +80,15 @@
  }
  );
 
- logins = new FormGroup({
-  name : new FormControl('',Validators.required),
-  email : new FormControl('', [
-    Validators.required,
-    Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$")
-  ]),
-  mobile : new FormControl('', Validators.required),
-  subject : new FormControl(''),
-  message : new FormControl(''),
-}
-);
-
-loginss = new FormGroup({
-  name : new FormControl('',Validators.required),
-  email : new FormControl('', [
-    Validators.required,
-    Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$")
-  ]),
-  mobile : new FormControl('', Validators.required),
-  subject : new FormControl(''),
-  message : new FormControl(''),
-}
-);
-
-
- getdata(){
-  this.products.getdata().subscribe(
-    res => {
-      this.posts = res;
-      console.log(this.posts);
-    }
-  );
-}
-
-onSubmit(){
-  this.products.adddata(this.login.value)
+ 
+onSubmit3(){
+  this.products.adddata(this.loginsss.value)
   .subscribe(data => {
     console.log(this.data);
     
   })
   alert("Data submitted successfuly");
-    this.login.reset();
-}
-
-onSubmit1(){
-  this.products.adddata(this.logins.value)
-  .subscribe(data => {
-    console.log(this.data);
-    
-  })
-  alert("Data submitted successfuly");
-    this.login.reset();
-}
-
-onSubmit2(){
-  this.products.adddata(this.loginss.value)
-  .subscribe(data => {
-    console.log(this.data);
-    
-  })
-  alert("Data submitted successfuly");
-    this.login.reset();
-}
+    this.loginsss.reset();
+  }
 
 </div> -->
