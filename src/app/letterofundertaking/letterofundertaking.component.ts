@@ -21,6 +21,8 @@ export class LetterofundertakingComponent implements OnInit {
   message2 = "Still confused about 'business plan project report', please provide Free Advisor Consultation.";
   subject3 = "Complete List of Document required";
   message3 = "Please share the list of required document for the same.";
+  subject4 = "Not Founs Ansrwe our Question";
+  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the same.";
 
   constructor(private products: FormService, private router: Router) { }
 
@@ -53,6 +55,18 @@ export class LetterofundertakingComponent implements OnInit {
 );
 
 loginss = new FormGroup({
+  name : new FormControl('',Validators.required),
+  email : new FormControl('', [
+    Validators.required,
+    Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$")
+  ]),
+  mobile : new FormControl('', Validators.required),
+  subject : new FormControl(''),
+  message : new FormControl(''),
+}
+);
+
+loginsss = new FormGroup({
   name : new FormControl('',Validators.required),
   email : new FormControl('', [
     Validators.required,
@@ -102,6 +116,16 @@ onSubmit2(){
   })
   alert("Data submitted successfuly");
     this.login.reset();
+}
+
+onSubmit3(){
+  this.products.adddata(this.loginsss.value)
+  .subscribe(data => {
+    console.log(this.data);
+    
+  })
+  alert("Data submitted successfuly");
+    this.logins.reset();
 }
 
 }
