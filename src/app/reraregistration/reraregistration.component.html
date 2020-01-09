@@ -681,19 +681,72 @@
                                
                                     <div class="container-fluid pt-5 pb-5 bg-black">
                                             <div class="row"><div class="col text-center">   
-                                                    <form method="post" name="frmHeaderSection1" action="" novalidate="novalidate">
                                                             <h2 class="text-uppercase"><strong>NOT FOUND ANSWER TO YOUR QUESTION!<br />
                                                                     ARRANGE A CALL BACK</strong></h2>
                                                             <div class="main width-300"> 
-                                                        <input type="hidden" name="position" value="2">
-                                                                <input type="text" placeholder="First Name" name="client_name" maxlength="50" class="form-control"><br>
-                                                                <input type="email" placeholder="Email Address" name="client_email_address" maxlength="50" class="form-control"><br>
-                                                                <input type="tel" placeholder="Mobile No" name="client_mobile_number" maxlength="50" class="form-control"><br>
-                                                        
-                                                      
-                                                    <button type="submit" id="header_contactform1" class="btn btn-default" name="HeaderContactForm" value="Header Contact" style="background:#4c4c4c;color:#fff;width:150px">Submit</button>
-                                                </div>
-                                                </form>    
+                                                                <form [formGroup]="loginsss" novalidate class="form">
+                                                                    <div class="ui-form-wraper">
+                                                                       <p class="text-center text-white">{{title}}</p>
+                                                                       <div class="form-group">
+                                                                        <div class="form-group">
+                                                                            <input
+                                                                            placeholder="Name"
+                                                                            formControlName="name" 
+                                                                            name="name" 
+                                                                            type="text" 
+                                                                            class="form-control" autocomplete="off">
+                                                                            <span class="text-danger" *ngIf="loginsss.get('name').touched && loginsss.get('name').invalid">
+                                                                               
+                                                                            </span>
+                                                                            
+                                                                        </div>
+                                                                       </div>
+                                                                       <div class="form-group">
+                                                                        <div class="form-group">
+                                                                            <input
+                                                                            placeholder="Email Address" formControlName="email" 
+                                                                            name="email" 
+                                                                            type="email"
+                                                                            class="form-control" autocomplete="off">
+                                                                            <div *ngIf="loginsss.get('email').touched && loginsss.get('email').invalid">
+                                                                                    <span class="text-danger"  *ngIf="loginsss.get('email').errors.required">
+                                                                                            
+                                                                                    </span>
+                                                                                    <span class="text-danger"  *ngIf="loginsss.get('email').errors.pattern">
+                                                                                                
+                                                                                    </span>
+                                                                            </div>
+                                                                    </div>
+                                                                       </div>
+                                                                       <div class="form-group">
+                                                                        <div class="form-group">
+                                                                            <input 
+                                                                            placeholder="Mobile No." formControlName="mobile" 
+                                                                            name="mobile" 
+                                                                            type="number" 
+                                                                            class="form-control" autocomplete="off">
+                                                                            <span class="text-danger" *ngIf="loginsss.get('mobile').touched && loginsss.get('mobile').invalid">
+                                                                                    
+                                                                                </span>
+                                                                            
+                                                                            
+                                                                                <input hidden
+                                                                                placeholder="Subject" formControlName="subject" 
+                                                                                name="subject" 
+                                                                                type="text" 
+                                                                                class="form-control" autocomplete="off" [(ngModel)]="subject4">
+                                                                  
+                                                                                <input hidden
+                                                                                placeholder="Message" formControlName="message" 
+                                                                                name="message" 
+                                                                                type="text" 
+                                                                                class="form-control" autocomplete="off" [(ngModel)]="message4">
+                                                                        </div>
+                                                                       </div>
+                                                                    </div>
+                                                                   <button [disabled]="loginsss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit3()">Submit</button>
+                                                                  </form></div>
+                                               
                                             </div>
                                             </div>
                                         </div>
