@@ -4,6 +4,10 @@
     color: #000000;
 }
 
+.col.less-paddings{
+    padding:0 !important;
+}
+
 .text-black{
     color: #000000 !important;
     font-weight: 600;

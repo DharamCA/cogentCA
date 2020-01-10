@@ -135,3 +135,9 @@ a{
 .arrangecall{
     margin-right:5px;
 }
+
+.carousel-caption{
+    background: #dcdcdc;
+    color: #000000;
+    transition: 1s background;
+}
