@@ -22,6 +22,14 @@
     font-size: 35px;
 }
 
+.d-block {
+    height: 550px;
+}
+
+.carousel-inner {
+    height: 550px;
+}
+
 @media screen and (max-width:480px){
     .figure-align{
         font-size: 20px;
