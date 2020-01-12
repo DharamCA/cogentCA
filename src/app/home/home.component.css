@@ -34,6 +34,15 @@
     .figure-align{
         font-size: 20px;
     }
+
+    .d-block{
+        height: 250px;
+    }
+
+    .carousel-inner, .carousel.slide.pointer-event {
+        height: 250px;
+    }
+
     .col.lesspadding{
         height: 325px !important;
         background-size: 100% 325px !important;
@@ -139,7 +148,58 @@ a{
 .carousel-caption{
     background: #dcdcdc;
     color: #000000;
-    transition: 1s background;
+}
+
+.carousel-caption.one{
+    top: 121px;
+    position: absolute;
+    width: 50%;
+    height: 10% !important;
+    left: 45px;
+}
+
+.carousel-caption.two{
+    top: 121px;
+    position: absolute;
+    width: 50%;
+    height: 10% !important;
+    left: 45px;
+}
+
+.carousel-caption.three{
+    top: 121px;
+    position: absolute;
+    width: 50%;
+    height: 10% !important;
+    left: 45px;
+}
+
+.carousel-caption.four{
+    top: 121px;
+    position: absolute;
+    width: 30%;
+    height: 12% !important;
+    left: 660px !important;
+}
+
+.carousel-indicators li {
+    height: 2px !important;
+    background-color: #000000;
+    border-top: 2px solid transparent !important;
+    border-bottom: 2px solid transparent !important;
+    
+}
+
+.carousel-caption.five{
+    top: 121px;
+    position: absolute;
+    width: 50%;
+    height: 10% !important;
+    left: 45px;
+}
+
+.carousel-caption p{
+    margin-bottom: 0;
 }
 
 .row .col.text-center p{
