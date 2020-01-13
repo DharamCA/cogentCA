@@ -1,3 +1,293 @@
-<p>administratorpage works!</p>
-<p>administratorpage works!</p>
-<p>administratorpage works!</p>
+<div class="container">
+    <h2>Toggleable Tabs</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">PRODUCT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu1">CAREER</a>
+      </li>
+      </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <h3>Product Insert Form</h3>
+       
+
+
+
+<div class="container">
+<div class="row">
+    <div class="col">
+        <br /><br />
+        <form [formGroup]="productform" novalidate class="form">
+            <div class="row">
+            <div class="col">
+            <div class="form-group">
+                <label for="name">Product Name <span class="text-danger" *ngIf="productform.get('name').touched && productform.get('name').invalid">
+                        -- not be blank
+                    </span></label>
+                <input type="text" class="form-control" name="name" id="name" formControlName="name" autocomplete="off">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="model">Model No. <span class="text-danger" *ngIf="productform.get('model').touched && productform.get('model').invalid">
+                        -- not be blank
+                    </span></label>
+                <input type="text" class="form-control" name="model" id="model" formControlName="model" autocomplete="off">
+            </div>
+        </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="mrp">MRP <span class="text-danger" *ngIf="productform.get('mrp').touched && productform.get('mrp').invalid">
+                        -- not be blank
+                    </span></label>
+                <input type="text" class="form-control" name="mrp" id="mrp" formControlName="mrp" autocomplete="off">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                    <label for="lighttype">Light Type <span class="text-danger" *ngIf="productform.get('lighttype').touched && productform.get('lighttype').invalid">
+                            -- not be blank
+                         </span></label>    
+                    <select class="form-control" id="lighttype" name="lighttype" formControlName="lighttype">
+                        <option value="NA">NA</option>         
+                        <option value="indoor">Indoor</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="indoor and outdoor">Indoor & Outdoor</option>
+                              </select>
+
+               
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="voltage">Input Voltage <span class="text-danger" *ngIf="productform.get('voltage').touched && productform.get('voltage').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="voltage" formControlName="voltage" id="voltage">
+                    <option value="NA">NA</option> 
+                    <option value="90Vac-285Vac, 50Hz/60Hz">90Vac-285Vac, 50Hz/60Hz</option>    
+                </select>
+              
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="wattage">Input Wattage <span class="text-danger" *ngIf="productform.get('wattage').touched && productform.get('wattage').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="wattage" formControlName="wattage" id="wattage">
+                    <option value="0.5w">0.5W</option>    
+                        <option value="1w">1W</option>
+                        <option value="5w">5W</option>
+                        <option value="6w">6W</option>
+                        <option value="7w">7W</option>
+                        <option value="8w">8W</option>
+                        <option value="9w">9W</option>
+                        <option value="10w">10W</option>
+                        <option value="12w">12W</option>
+                        <option value="14w">14W</option>
+                        <option value="15w">15W</option>
+                        <option value="1w">18W</option>
+                        <option value="20w">20W</option>
+                        <option value="22w">22W</option>
+                        <option value="24w">24W</option>
+                        <option value="32w">32W</option>
+                        <option value="36w">36W</option>
+                        <option value="40w">40W</option>
+                        <option value="42w">42W</option>
+                        <option value="60w">60W</option>
+                        <option value="80w">80W</option>
+                        <option value="100w">100W</option>
+                        <option value="150w">150W</option>
+                      </select>
+              
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <div class="form-group">
+                <label for="basesize">Base Size <span class="text-danger" *ngIf="productform.get('basesize').touched && productform.get('basesize').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="basesize" formControlName="basesize" id="basesize">
+                        <option value="NA">NA</option>    
+                        <option value="T8toG13">T8-G13</option>
+                        <option value="B22/E27">B22/E27</option>
+                        <option value="T5(Wall Mounting)">T5(Wall Mounting)</option>
+                        <option value="T8(Wall Mounting)">T8(Wall Mounting)</option>
+                      </select>
+               
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="efficacy">Efficacy <span class="text-danger" *ngIf="productform.get('efficacy').touched && productform.get('efficacy').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="efficacy" formControlName="efficacy" id="efficacy">
+                    <option value="NA">NA</option>     
+                    <option value=">85lm/w">&gt;85lm/W</option>
+                            <option value=">85lm/w">&gt;95lm/W</option>
+                 </select>
+               
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="cri">CRI(Ra) <span class="text-danger" *ngIf="productform.get('cri').touched && productform.get('cri').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="cri" formControlName="cri" id="cri">
+                    <option value="NA">NA</option>     
+                    <option value="80">80</option>
+                            <option value="85">85</option>
+                 </select>
+                
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <div class="form-group">
+                <label for="pf">PF <span class="text-danger" *ngIf="productform.get('pf').touched && productform.get('pf').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="pf" formControlName="pf" id="pf">
+                    <option value="NA">NA</option>     
+                    <option value="0.95">0.95</option>
+                        <option value=">0.95">&gt;0.95</option>
+                </select>
+               
+            </div>
+            </div>
+            <div class="col">
+            <div class="form-group">
+                <label for="angle">Beam Angle <span class="text-danger" *ngIf="productform.get('angle').touched && productform.get('angle').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="angle" formControlName="angle" id="angle">
+                    <option value="NA">NA</option> 
+                        <option value="45">45deg</option>
+                        <option value="90">90deg</option>
+                        <option value="120">120deg</option>
+                        <option value=">120">&gt;120deg</option>
+                        <option value=">140">&gt;140deg</option>
+                        <option value=">270">&gt;270deg</option>
+                        <option value="45, 90 & 120">45, 90 & 120deg</option>
+                      </select>
+               
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="material">Material used <span class="text-danger" *ngIf="productform.get('material').touched && productform.get('material').invalid">
+                        -- not be blank
+                    </span></label>
+                <select class="form-control" name="material" formControlName="material" id="material">
+                    <option value="NA">NA</option>
+                    <option value="ALPC">Pure Diecast AL + PC</option>
+                    <option value="AL Glass">Pure Diecast AL + Glass</option>
+                    <option value="PBT">PBT + Inside All</option>
+                    <option value="PC">PC</option>
+                  </select>
+               
+                
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <div class="form-group">
+                    <label for="scolors">Select Color <span class="text-danger" *ngIf="productform.get('scolors').touched && productform.get('scolors').invalid">
+                            -- not be blank
+                        </span></label>    
+                    <select class="form-control" name="scolors" formControlName="scolors" id="scolors">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="white">White</option>   
+                                <option value="Red, Green, Blue & White">Red, Green, Blue & White</option> 
+                                <option value="cool white">Cool White(CW)</option>
+                                <option value="warm white">Warm White (WW)</option>
+                                <option value="neutral white">Neutral White(NW)</option>
+                                <option value="cool white, warm white">Cool White(CW), Warm White (WW)</option>
+                                <option value="cool white, warm white, Neutral White">Cool White(CW), Warm White (WW) & Neutral White(NW)</option>
+                    </select>
+               
+            </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                <label for="image">Upload Image</label>
+                <input type="file" class="form-control0" [(ngModel)]="imagevalue" name="image" formControlName="image" (change)="fileupload($event)" observeFiles>
+                <input type="text" hidden class="form-control" name="image" id="image"  formControlName="image" [(value)]="imagevalue">
+                <img class="mt-2" width="100px" src="../../assets/images/product/{{imagevalue}}" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <label for="description">Application <span class="text-danger" *ngIf="productform.get('description').touched && productform.get('description').invalid">
+                -- not be blank
+</span></label>
+            <textarea rows="6"
+            formControlName="description" 
+            name="description" 
+            type="text" 
+            class="form-control"></textarea>
+        </div>
+    </div>
+    <button [disabled]="productform.invalid" class="btn btn-primary" (click)="addproduct()">Submit Product</button> &#160;&#160;&#160;      
+    <button [disabled]="productform.invalid" class="btn btn-primary">Cancel</button>
+    </form>
+        <br /><br />
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row border-bottom" *ngFor="let post of data">
+    <div class="col-3">
+        <img src="../../assets/images/product/{{post.image}}" alt="">
+    </div>
+    <div class="col-6">
+        <ul class="list-no-style">
+        <li><b>Product ID:</b> {{productid}}{{post.product_id}}</li>
+        <li><b>Product Name:</b> {{post.name}}</li>
+        <li><b>Model:</b> {{post.model}}</li>
+        <li><b>Price:</b> Rs. {{post.mrp}}</li>
+        <li><b>Light Type:</b> {{post.lighttype}}</li>
+        <li><b>Input Voltage:</b> {{post.voltage}}</li>
+        <li><b>Input Wattage:</b> {{post.wattage}}</li>
+        <li><b>Base Size:</b> {{post.basesize}}</li>
+        <li><b>Efficacy:</b> {{post.efficacy}}</li>
+        <li><b>CRI:</b> {{post.cri}}</li>
+        <li><b>PF:</b> {{post.pf}}</li>
+        <li><b>Beam Angle:</b> {{post.angle}}</li>
+        <li><b>Material Used:</b> {{post.material}}</li>
+        <li><b>Color:</b> {{post.scolors}}</li>
+        <li><b>Description:</b> {{post.description}}</li>
+        </ul>
+    </div>
+    <div class="col-3 text-right">
+        <button class="btn btn-success" (click)="updateitem(post)">Update</button> &#160;&#160;&#160; <button class="btn btn-danger" (click)="deleteitem(post)">Delete</button>
+    </div>
+   
+</div>
+</div>
+
+</div>
+<div id="menu1" class="container tab-pane fade"><br>
+<h3>Career Form</h3>
+
+</div>
+</div>
+</div>

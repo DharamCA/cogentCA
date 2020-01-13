@@ -119,3 +119,43 @@ h4{
         width:50px !important;
     }
 }
+
+
+/* ***************************** */
+
+
+.main{
+    height: 40px; 
+    width:  300px; 
+    background: #ecdbdb;
+    position:fixed;
+    bottom: 0vw;
+    right: 30px;
+    z-index: 99999;
+    border:solid 1px #80191a;
+}
+
+
+.main.active{
+    height: 400px; 
+}
+
+.main .col{
+    background: #ffcc33;
+    cursor: pointer;
+}
+
+.col p{
+    color:#fff;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.fa{
+    cursor: pointer;
+}

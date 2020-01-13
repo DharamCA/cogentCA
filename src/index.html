@@ -30,6 +30,17 @@
         $(this).fadeOut(1000);
       })
     })
+
+    $(document).ready(function(){
+      $(".main > .row").click(function(){
+        if($(".main").hasClass("active")){
+          $(".main").removeClass("active");
+        }
+        else{
+          $(".main").addClass("active");
+        }
+      });
+    });
   </script>
 </body>
 </html>
