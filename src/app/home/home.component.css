@@ -150,7 +150,7 @@ a{
     color: #000000;
 }
 
-.carousel-caption.one{
+/* .carousel-caption.one{
     top: 121px;
     position: absolute;
     width: 50%;
@@ -180,7 +180,7 @@ a{
     width: 30%;
     height: 12% !important;
     left: 660px !important;
-}
+} */
 
 .carousel-indicators li {
     height: 2px !important;
@@ -190,13 +190,13 @@ a{
     
 }
 
-.carousel-caption.five{
+/* .carousel-caption.five{
     top: 121px;
     position: absolute;
     width: 50%;
     height: 10% !important;
     left: 45px;
-}
+} */
 
 .carousel-caption p{
     margin-bottom: 0;
@@ -208,4 +208,9 @@ text-overflow: ellipsis;
 display: -webkit-box;
 -webkit-line-clamp: 3;
 -webkit-box-orient: vertical;
+}
+
+.bg-lightgrey{
+    background: #d4e4ef;
+    margin-top:5px;
 }
