@@ -88,3 +88,30 @@ h2.border-bottom{
     padding: 50px;
     position: absolute;
 }
+
+.boxs{
+    width: 70%;
+    border:solid 1.5px #cccccc;
+    padding: 0 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #cccccc;
+    transition: 2s box-shadow;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.boxs img{
+    margin-top: -30px;
+    background: #ffcc33;
+    border-radius:100%; 
+}
+
+@media screen and (max-width:480px){
+    .col.mobile{
+        flex-basis: unset !important;
+    }
+
+    .col.mobile .boxs{
+        width:100% !important;
+    }
+}

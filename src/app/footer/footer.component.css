@@ -127,12 +127,12 @@ h4{
 .main{
     height: 40px; 
     width:  300px; 
-    background: #ecdbdb;
+    background: #ffffff;
     position:fixed;
     bottom: 0vw;
     right: 30px;
     z-index: 99999;
-    border:solid 1px #80191a;
+    border:solid 1px #cccccc;
 }
 
 
@@ -141,12 +141,12 @@ h4{
 }
 
 .main .col{
-    background: #ffcc33;
+    background: #cccccc;
     cursor: pointer;
 }
 
 .col p{
-    color:#fff;
+    color: #000000;;
     margin-bottom: 0;
     padding: 10px;
 }

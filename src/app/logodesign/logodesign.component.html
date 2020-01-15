@@ -1,1 +1,440 @@
-<p>logodesign works!</p>
+<div class="container-fluid bg-green">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="sidenot-2 text-center">
+                                    <h5>Logo Designing</h5>
+                    <p>Our experienced professionals can help you design your company logo and help you give a unique impression to your business brand. Call us for inquiry at 8800107107</p>  
+                            </div>
+                        </div>
+                          <div class="col text-center">
+                            <img src="../../assets/images/think_idea.png" alt="">
+                        </div>
+                        <div class="col">
+                            <div class="contatcform">
+                                                  
+                 <p class="text-center text-white">Want a unique logo for your brand. Connect with our creative designers Right Now !
+    
+                             </p>
+                             <form [formGroup]="login" novalidate class="form">
+                                    <div class="ui-form-wraper">
+                                       <p class="text-center text-white">{{title}}</p>
+                                       <div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                            <input
+                                            placeholder="Name"
+                                            formControlName="name" 
+                                            name="name" 
+                                            type="text" 
+                                            class="form-control" autocomplete="off">
+                                            <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                                
+                                            </span>
+                                            
+                                        </div>
+                                       </div>
+                                       <div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                            <input
+                                            placeholder="Email Address" formControlName="email" 
+                                            name="email" 
+                                            type="email"
+                                            class="form-control" autocomplete="off">
+                                            <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                    <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                            
+                                                    </span>
+                                                    <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                                
+                                                    </span>
+                                            </div>
+                                    </div>
+                                       </div>
+                                       <div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                            <input 
+                                            placeholder="Mobile No." formControlName="mobile" 
+                                            name="mobile" 
+                                            type="number" 
+                                            class="form-control" autocomplete="off">
+                                            <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                    
+                                                </span>
+                                
+                                                <input hidden
+                                                placeholder="Subject" formControlName="subject" 
+                                                name="subject" 
+                                                type="text" 
+                                                class="form-control" autocomplete="off" [(ngModel)]="subject1">
+                                
+                                                <input hidden
+                                                placeholder="Message" formControlName="message" 
+                                                name="message" 
+                                                type="text" 
+                                                class="form-control" autocomplete="off" [(ngModel)]="message1">
+                                        </div>
+                                       </div>
+                                   </div>
+                                   <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                                </form>
+           
+        </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </div>
+    
+<div class="container">
+    <div class="row mb-5">
+        <div class="col mobile">
+            <div class="boxs list-hover">
+                <h2 class="text-center pt-4"><b>LOGO DESIGNS</b></h2>
+                <p>
+                        Give your brand an identity with the unique logo.</p>
+                        
+                       <p>Shout out loud your brand with a meaningful and attractive logo and let your brand make a noise in the market.</p>
+            </div>
+        </div>
+        <div class="col mobile">
+                <div class="boxs list-hover">
+                    <h2 class="text-center pt-4 "><b>BUSINESS CARD</b></h2>
+                    <p>
+                            
+Our professional designers make sure that you crack the business deal with long-lasting impression when you share a swanky business card with your clients. </p>
+                </div>
+            </div>
+    </div>
+</div>
+    
+    
+                <div class="container-fluid pt-5 pb-5 bg-yellow">
+                        <div class="row"><div class="col text-center">   
+                                    <h2 class="mb-5 text-uppercase"><strong>Still confused! <br>Take Free Advisor Consultation</strong></h2>
+                                    <div class="main width-300"> 
+                                            <form [formGroup]="logins" novalidate class="form">
+                                                    <div class="ui-form-wraper">
+                                                       <p class="text-center text-white">{{title}}</p>
+                                                       <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                                            <input
+                                                            placeholder="Name"
+                                                            formControlName="name" 
+                                                            name="name" 
+                                                            type="text" 
+                                                            class="form-control" autocomplete="off">
+                                                            <span class="text-danger" *ngIf="logins.get('name').touched && logins.get('name').invalid">
+                                                               
+                                                            </span>
+                                                            
+                                                        </div>
+                                                       </div>
+                                                       <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                                            <input
+                                                            placeholder="Email Address" formControlName="email" 
+                                                            name="email" 
+                                                            type="email"
+                                                            class="form-control" autocomplete="off">
+                                                            <div *ngIf="logins.get('email').touched && logins.get('email').invalid">
+                                                                    <span class="text-danger"  *ngIf="logins.get('email').errors.required">
+                                                                            
+                                                                    </span>
+                                                                    <span class="text-danger"  *ngIf="logins.get('email').errors.pattern">
+                                                                                
+                                                                    </span>
+                                                            </div>
+                                                    </div>
+                                                       </div>
+                                                       <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                            <input 
+                                                            placeholder="Mobile No." formControlName="mobile" 
+                                                            name="mobile" 
+                                                            type="number" 
+                                                            class="form-control" autocomplete="off">
+                                                            <span class="text-danger" *ngIf="logins.get('mobile').touched && logins.get('mobile').invalid">
+                                                                    
+                                                                </span>
+                                                            
+                                                            
+                                                                <input hidden
+                                                                placeholder="Subject" formControlName="subject" 
+                                                                name="subject" 
+                                                                type="text" 
+                                                                class="form-control" autocomplete="off" [(ngModel)]="subject2">
+                                                
+                                                                <input hidden
+                                                                placeholder="Message" formControlName="message" 
+                                                                name="message" 
+                                                                type="text" 
+                                                                class="form-control" autocomplete="off" [(ngModel)]="message2">
+                                                        </div>
+                                                       </div>
+                                                    </div>
+                                                   <button [disabled]="logins.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit1()">Submit</button>
+                                                </form></div>
+                           
+                        </div>
+                        </div>
+                    </div>
+    
+
+    
+                    <div class="container">
+                            <div class="row mb-5">
+                                <div class="col mobile">
+                                    <div class="boxs list-hover">
+                                        <h2 class="text-center pt-4"><b>SOCIAL MEDIA BANNERS</b></h2>
+                                        <p>Who doesn’t like engagements on their posts and content?</p>
+                                                
+                                               <p>We know you want that likes & follows </p>
+                                    </div>
+                                </div>
+                                <div class="col mobile">
+                                        <div class="boxs list-hover">
+                                            <h2 class="text-center pt-4 "><b>LETTERHEAD</b></h2>
+                                            <p>Use beautifully crafted & designed letterheads for all your official communications with the external world and represent yourself more professionally</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    <div class="container-fluid pt-5 pb-5 bg-yellow">
+                            <div class="row"><div class="col text-center">   
+                                            <h2 class="text-uppercase"><strong>Inbox Now<br>Complete List of Document required</strong></h2>
+                                            <div class="main width-300"> 
+                                                    <form [formGroup]="loginss" novalidate class="form">
+                                                            <div class="ui-form-wraper">
+                                                               <p class="text-center text-white">{{title}}</p>
+                                                               <div class="form-group">
+                                                                <div class="form-group">
+                                                                    <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                                                    <input
+                                                                    placeholder="Name"
+                                                                    formControlName="name" 
+                                                                    name="name" 
+                                                                    type="text" 
+                                                                    class="form-control" autocomplete="off">
+                                                                    <span class="text-danger" *ngIf="loginss.get('name').touched && loginss.get('name').invalid">
+                                                                       
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                               </div>
+                                                               <div class="form-group">
+                                                                <div class="form-group">
+                                                                    <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                                                    <input
+                                                                    placeholder="Email Address" formControlName="email" 
+                                                                    name="email" 
+                                                                    type="email"
+                                                                    class="form-control" autocomplete="off">
+                                                                    <div *ngIf="loginss.get('email').touched && loginss.get('email').invalid">
+                                                                            <span class="text-danger"  *ngIf="loginss.get('email').errors.required">
+                                                                                    
+                                                                            </span>
+                                                                            <span class="text-danger"  *ngIf="loginss.get('email').errors.pattern">
+                                                                                        
+                                                                            </span>
+                                                                    </div>
+                                                            </div>
+                                                               </div>
+                                                               <div class="form-group">
+                                                                <div class="form-group">
+                                                                    <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                                    <input 
+                                                                    placeholder="Mobile No." formControlName="mobile" 
+                                                                    name="mobile" 
+                                                                    type="number" 
+                                                                    class="form-control" autocomplete="off">
+                                                                    <span class="text-danger" *ngIf="loginss.get('mobile').touched && loginss.get('mobile').invalid">
+                                                                            
+                                                                        </span>
+                                                                    
+                                                                    
+                                                                        <input hidden
+                                                                        placeholder="Subject" formControlName="subject" 
+                                                                        name="subject" 
+                                                                        type="text" 
+                                                                        class="form-control" autocomplete="off" [(ngModel)]="subject3">
+                                                        
+                                                                        <input hidden
+                                                                        placeholder="Message" formControlName="message" 
+                                                                        name="message" 
+                                                                        type="text" 
+                                                                        class="form-control" autocomplete="off" [(ngModel)]="message3">
+                                                                </div>
+                                                               </div>
+                                                            </div>
+                                                           <button [disabled]="loginss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit2()">Submit</button>
+                                                        </form> </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+                        <div class="container mb-5">
+                            <h2 class="custom-text text-center mt-5 mb-5"><span>PACKAGES</span></h2>
+                            <div class="row">
+                                
+                                 <div class="col pr-0">
+                                    <div class="card basic text-center">
+                                    <div class="box1 yellow-color">
+                                        <h3>Basic</h3>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="box2 mb-5">
+                                    <h4><i class="fa fa-inr" aria-hidden="true"></i> 1999 <br><small><i>Inclusive all taxes</i></small></h4>
+                                    <div class="pt-3 pb-3"><b>Design Customize Logo&nbsp;<br></b><br>2 Conceptual Design<br>High-resolution logos<br>Transparent PNG<br>Resizable vector files<br>Print-ready<br>Full logo ownership<br>Make changes and re-download </div>  <br />
+                                    <button class="btn btn-primary mt-3 mb-3">LET's START</button>
+                                </div>                    
+                             </div> 
+                                 </div>
+                                
+                                <div class="col pl-0 pr-0 middle-panel card">
+                                    <div class=" text-center">
+                                        <div class="box1">      
+                                    <h3>Standard</h3>
+                                    <p>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    </p></div>
+                                    <div class="box2">
+                                        <h4><i class="fa fa-inr" aria-hidden="true"></i> 3499 <br><small><i>Inclusive all taxes</i></small></h4>    
+                                    <div class="pt-2"><div> <br><b>Design Customize Logo<br></b><br>3 Conceptual Design<br>High-resolution logos<br>Transparent PNG<br>Resizable vector files<br>Print-ready<br>Full logo ownership<br>Make changes and re-download<br>+<br><b>Stationery Design</b><br>Includes Business Card, Letterhead, and A4 Envelope</div>
+                                    </div>  
+                                               
+                                                                        <button class="btn btn-primary mt-5">LET's START</button>
+                                    </div>   
+                                       
+                                    </div>
+                                </div>
+                                
+                                <div class="col pl-0">
+                                    <div class="card premium text-center">
+                                        <div class="box1 yellow-color">
+                                                    <h3>Premium</h3>
+                                                    <p>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                                                        </p>
+                                        </div>
+                                        <div class="box2">
+                                               
+                                            <div class="pt-3 pb-3">
+                                                <h4><i class="fa fa-inr" aria-hidden="true"></i> 4999 <br><small><i>Inclusive all taxes</i></small></h4>
+                                                    <div> <br /><b>Design Customize Logo<br></b><br>3 Conceptual Design<br>High-resolution logos<br>Transparent PNG<br>Resizable vector files<br>Print-ready<br>Full logo ownership<br>Make changes and re-download<br>+<br><b>Stationery Design</b><br>Includes Business Card, Letterhead, and A4 Envelope<br>+<br><b>Social Media Banner</b><br>Includes FB, Twitter, Linkedin &amp; Instagram <br />        
+                                                    </div>
+                                                   
+                                            </div>  
+                                               
+                                                                            <button class="btn btn-primary mt-3 mb-3">LET's START</button>
+                                    </div>                             
+                                        </div>
+                    
+                                      
+                                    </div>
+                                </div>
+                                    </div>
+                               
+                                    <div class="container-fluid pt-5 pb-5 bg-black">
+                                            <div class="row"><div class="col text-center">   
+                                                            <h2 class="text-uppercase"><strong>NOT FOUND ANSWER TO YOUR QUESTION!<br />
+                                                                    ARRANGE A CALL BACK</strong></h2>
+                                                            <div class="main width-300"> 
+                                                                    <form [formGroup]="loginsss" novalidate class="form">
+                                                                            <div class="ui-form-wraper">
+                                                                               <p class="text-center text-white">{{title}}</p>
+                                                                               <div class="form-group">
+                                                                                <div class="form-group">
+                                                                                    <input
+                                                                                    placeholder="Name"
+                                                                                    formControlName="name" 
+                                                                                    name="name" 
+                                                                                    type="text" 
+                                                                                    class="form-control" autocomplete="off">
+                                                                                    <span class="text-danger" *ngIf="loginsss.get('name').touched && loginsss.get('name').invalid">
+                                                                                       
+                                                                                    </span>
+                                                                                    
+                                                                                </div>
+                                                                               </div>
+                                                                               <div class="form-group">
+                                                                                <div class="form-group">
+                                                                                    <input
+                                                                                    placeholder="Email Address" formControlName="email" 
+                                                                                    name="email" 
+                                                                                    type="email"
+                                                                                    class="form-control" autocomplete="off">
+                                                                                    <div *ngIf="loginsss.get('email').touched && loginsss.get('email').invalid">
+                                                                                            <span class="text-danger"  *ngIf="loginsss.get('email').errors.required">
+                                                                                                    
+                                                                                            </span>
+                                                                                            <span class="text-danger"  *ngIf="loginsss.get('email').errors.pattern">
+                                                                                                        
+                                                                                            </span>
+                                                                                    </div>
+                                                                            </div>
+                                                                               </div>
+                                                                               <div class="form-group">
+                                                                                <div class="form-group">
+                                                                                    <input 
+                                                                                    placeholder="Mobile No." formControlName="mobile" 
+                                                                                    name="mobile" 
+                                                                                    type="number" 
+                                                                                    class="form-control" autocomplete="off">
+                                                                                    <span class="text-danger" *ngIf="loginsss.get('mobile').touched && loginsss.get('mobile').invalid">
+                                                                                            
+                                                                                        </span>
+                                                                                    
+                                                                                    
+                                                                                        <input hidden
+                                                                                        placeholder="Subject" formControlName="subject" 
+                                                                                        name="subject" 
+                                                                                        type="text" 
+                                                                                        class="form-control" autocomplete="off" [(ngModel)]="subject4">
+                                                                          
+                                                                                        <input hidden
+                                                                                        placeholder="Message" formControlName="message" 
+                                                                                        name="message" 
+                                                                                        type="text" 
+                                                                                        class="form-control" autocomplete="off" [(ngModel)]="message4">
+                                                                                </div>
+                                                                               </div>
+                                                                            </div>
+                                                                           <button [disabled]="loginsss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit3()">Submit</button>
+                                                                          </form> </div>
+                                               
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid text-center bg-yellow pt-3 pb-2">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5>FOR ANY ENQUIRY +91-8800107107</h5>
+                                                </div>
+                                            </div>
+                                        </div>
