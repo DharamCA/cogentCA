@@ -42,6 +42,14 @@ a{
     color: #ffffff !important;
 }
 
+/* .text-blue:hover{
+    color: #003399;
+}
+
+.text-yellow:hover{
+    color: #ffcc33;
+} */
+
 .subnav-align{
     position: relative;
     white-space: nowrap;

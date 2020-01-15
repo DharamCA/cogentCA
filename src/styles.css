@@ -49,6 +49,25 @@ ul.list-hover li:hover, img.list-hover:hover, .col.list-hover:hover{
     margin: 100px 0 0;
 }
 
+ul.list-check{
+    list-style-type: none;
+}
+
+ul.list-check li{
+    position: relative;
+}
+
+ul.list-check li:before{
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    background: #bf9926;
+}
+
 @media screen and (max-width:480px){
     .col.pr-0, .col.pl-0{
         width: 100% !important;

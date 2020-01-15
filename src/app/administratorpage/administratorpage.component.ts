@@ -28,21 +28,10 @@ export class AdministratorpageComponent implements OnInit {
     //this.getproductdata()
   }
 
-  productform = new FormGroup({
+  careerform = new FormGroup({
     name : new FormControl('',Validators.required),
-    model : new FormControl('', Validators.required),
-    mrp : new FormControl('', Validators.required),
-    lighttype : new FormControl('', Validators.required),
-    voltage : new FormControl('', Validators.required),
-    wattage : new FormControl('', Validators.required),
-    basesize : new FormControl('', Validators.required),
-    efficacy : new FormControl('', Validators.required),
-    cri : new FormControl('', Validators.required),
-    pf : new FormControl('', Validators.required),
-    angle : new FormControl('', Validators.required),
-    material : new FormControl('', Validators.required),
-    scolors : new FormControl('', Validators.required),
-    image : new FormControl('', Validators.required),
+    opens : new FormControl('', Validators.required),
+    location : new FormControl('', Validators.required),
     description : new FormControl('', Validators.required)
   });
 
