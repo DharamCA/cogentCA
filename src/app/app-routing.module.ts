@@ -74,6 +74,7 @@ import { GsspComponent } from './gssp/gssp.component';
 import { GrapComponent } from './grap/grap.component';
 import { IssbComponent } from './issb/issb.component';
 import { FsbComponent } from './fsb/fsb.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
@@ -143,7 +144,7 @@ const routes: Routes = [
   {path:'privacypolicy', component:PrivacypolicyComponent},
   {path:'refundpolicy', component:RefundpolicyComponent},
   {path:'confidentialpolicy', component:ConfidentialpolicyComponent},
-  {path:'administratorpage', component:AdministratorpageComponent},
+  {path:'administratorpage', canActivate:[AuthGuard], component:AdministratorpageComponent},
   {path:'susp', component:SuspComponent},
   {path:'scp', component:ScpComponent},
   {path:'bpc', component:BpcComponent},
