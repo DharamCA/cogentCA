@@ -1,0 +1,142 @@
+<div class="container">
+        <div class="row">
+                <div class="col lesspadding">
+                <img style="width: 100%;" src="https://www.e-startupindia.com/images/gst-registration-msme-registration-digital-signature-59d887f960039get-st-registration.jpg" data-lazyload-replaced="true">
+            </div>
+        </div>
+        
+            <div class="row">
+                <div class="col mt-5 lesspadding">
+                <h4>Brand Protector Combo</h4>
+                <h5><i class="fa fa-inr" aria-hidden="true"></i> 7999 all-inclusive</h5>
+               
+                                        <h4>Package Includes</h4>	
+                <ul class="list-check">
+                                                <li>Trademark  </li>
+                                                <li> MSME Registration  </li>
+                                                <li> GST Registration </li>
+                                            </ul>
+           
+            <hr>
+
+              <h4>Why this package ?</h4>
+            
+
+            <h3><strong>Trademark</strong></h3>
+
+<p>Trademark registration helps to protect business unique brand, logo, slogan which represent your business. After making application with Trademark registry you can use word <sup>TM</sup>&nbsp;over your logo and enable you to protect logo against infringement or misuse by 3rd parties.</p>
+
+
+<h4>&nbsp;</h4>
+
+<h3><strong>MSME registration</strong></h3>
+
+<p>MSME registration is useful for small businesses and enterprises to get enrol with Ministry of micro, small and medium enterprises. It helps you to take benefits and incentives from state government as well as from central government. It is also treat as a proof of business existence for sole proprietor.</p>
+
+
+<h3><strong>Goods and Service Tax registration</strong></h3>
+
+<p>Every unit carrying business requires goods and tax number requires to pay goods and service tax once annual turnover exceed INR 20 Lac.&nbsp;Generally, small business volunatrily apply for goods and tax number since it ensures business existence for sole proprietor and&nbsp;helps startups to open current bank account in the name of sole proprietor firm.</p>
+               
+        <hr>
+        <div class="main-form mt-5 mb-5" style="width: 50%;">
+                <h4 class="text-center text-uppercase"><b>Grab The Offer</b></h4>
+                <p class="text-center mb-5">Why wait Submit below form &amp; catch the best deal</p>
+                <form [formGroup]="login" novalidate class="form">
+                        <div class="ui-form-wraper">
+                           <p class="text-center text-white">{{title}}</p>
+                           <div class="row">
+                               <div class="col"><div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Name"
+                                        formControlName="name" 
+                                        name="name" 
+                                        type="text" 
+                                        class="form-control" autocomplete="off">
+                                        <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                            
+                                        </span>
+                                        
+                                    </div>
+                                   </div></div>
+                               <div class="col"><div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Email Address" formControlName="email" 
+                                        name="email" 
+                                        type="email"
+                                        class="form-control" autocomplete="off">
+                                        <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                        
+                                                </span>
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                            
+                                                </span>
+                                        </div>
+                                </div>
+                                   </div></div>
+                           </div>
+                           
+                           
+                           <div class="row">
+                                <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                            <input 
+                                            placeholder="Mobile No." formControlName="mobile" 
+                                            name="mobile" 
+                                            type="number" 
+                                            class="form-control" autocomplete="off">
+                                            <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                    
+                                                </span>
+                    
+                                        </div>
+                                       </div></div>
+                                <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                            
+                                                <input
+                                                placeholder="Subject" formControlName="subject" 
+                                                name="subject" 
+                                                type="text" 
+                                                class="form-control" autocomplete="off">
+                                                <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                                    
+                                                    </span>
+                    
+                                        </div>
+                                       </div></div>
+                            </div>
+                           
+                           
+                               <div class="row">
+                                    <div class="col"><div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                <textarea rows="6"
+                                                    placeholder="Message" formControlName="message" 
+                                                    name="message" 
+                                                    type="text" 
+                                                    class="form-control" autocomplete="off"></textarea>
+                                                    <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                        
+                                                        </span>
+                    
+                                            </div>
+                                           </div></div>
+                                   
+                                </div>
+                               
+                       </div>
+                       <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                    </form>
+                </div>
+    </div>
+    </div>
+</div>

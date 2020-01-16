@@ -1,0 +1,150 @@
+<div class="container">
+        <div class="row">
+                <div class="col lesspadding">
+                <img style="width: 100%;" src="https://www.e-startupindia.com/images/gst-registration-msme-registration-digital-signature-59d887f960039get-st-registration.jpg" data-lazyload-replaced="true">
+            </div>
+        </div>
+        
+            <div class="row">
+                <div class="col mt-5 lesspadding">
+                <h4>Startup Company Package</h4>
+                <h5><i class="fa fa-inr" aria-hidden="true"></i> 17999 all-inclusive</h5>
+                                        <h4>Package Includes</h4>	
+                <ul class="list-check">
+                                                <li>Private Limited Company  </li>
+                                                <li> GST Registration  </li>
+                                                <li> ISO Certification  </li>
+                                                <li> Startup India Recognition Certificate </li>
+                                            </ul>
+            <hr>
+    <h4>Why this package ?</h4>
+
+            <h3><strong><span style="color:#333333">Private Limited Company Incorporation</span></strong></h3>
+
+<p>A private limited company is the best option for a startup who looking for building the best organisation from the first day. Private limited company enable to protect company promoters liability and helps to raise funds from investors.</p>
+
+<h3><strong><span style="color:#333333">Goods and Service Tax Registration</span></strong></h3>
+
+<p>Every company carrying business requires goods and service tax number to raise an invoice to their customer and requires to charge GST tax once annual turnover exceeds INR 20 Lac or if you do Inter-State Trade or do Import Export Business.</p>
+
+<h3><strong><span style="color:#333333">ISO 9001 Certification</span></strong></h3>
+
+<p>ISO 9001 emphasis on achieving customer satisfaction for any general product or service.&nbsp;ISO 9001 certification logo on company's product, signboard, letterhead ensures that your company concern about customer satisfaction &amp; improve operational efficiency within the organization.</p>
+
+<h3><strong>Startup India Certificate of Recognition</strong></h3>
+
+<p>Apply under Startup India Initiative &amp; provide Certificate of Recognition issued by GOI for your proposed company. This certificate helps you avail several benefits of Startup India scheme such as&nbsp;</p>
+
+<ul>
+<li><strong>SELF CERTIFICATION</strong>&nbsp;and compliance under 9 environmental &amp; Labour laws</li>
+<li><strong>STARTUP PATENT APPLICATION</strong>&nbsp;fast track &amp; up to 80% rebate in filing patents</li>
+<li><strong>PUBLIC PROCUREMENT</strong>&nbsp;fast track under the criteria of "prior experience/turnover" for startups in all Central Government ministries/departments</li>
+<li><strong>WINDING UP COMPANY</strong>&nbsp;in 90 days&nbsp;under insolvency &amp; Bankruptcy code 2016</li>
+<li><strong>INR 10,000 CRORE FUND</strong>&nbsp;of funds for investment into startups through Alternate Investment Funds</li>
+<li><strong>INR 2,000 CRORE CREDIT</strong>&nbsp;guarantee fund for startups through National Credit Guarantee Trust Company / SIDBI over 4 years.</li>
+<li><strong>TAX EXEMPTIONS</strong>&nbsp;on capital gains &amp; on Investments above Fair Market Value</li>
+</ul>
+
+<p>*Eligibility of Certificate&nbsp;of Recognition under&nbsp;Startup India GOI Scheme is subject to&nbsp;business idea or model should be innovative or bring some valuable innovation in the existing process.</p>          <hr>
+           
+            <div class="main-form mt-5 mb-5" style="width: 50%;">
+                    <h4 class="text-center text-uppercase"><b>Grab The Offer</b></h4>
+                    <p class="text-center mb-5">Why wait Submit below form &amp; catch the best deal</p>
+                    <form [formGroup]="login" novalidate class="form">
+                            <div class="ui-form-wraper">
+                               <p class="text-center text-white">{{title}}</p>
+                               <div class="row">
+                                   <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                            <input
+                                            placeholder="Name"
+                                            formControlName="name" 
+                                            name="name" 
+                                            type="text" 
+                                            class="form-control" autocomplete="off">
+                                            <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                                
+                                            </span>
+                                            
+                                        </div>
+                                       </div></div>
+                                   <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                            <input
+                                            placeholder="Email Address" formControlName="email" 
+                                            name="email" 
+                                            type="email"
+                                            class="form-control" autocomplete="off">
+                                            <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                    <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                            
+                                                    </span>
+                                                    <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                                
+                                                    </span>
+                                            </div>
+                                    </div>
+                                       </div></div>
+                               </div>
+                               
+                               
+                               <div class="row">
+                                    <div class="col"><div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                <input 
+                                                placeholder="Mobile No." formControlName="mobile" 
+                                                name="mobile" 
+                                                type="number" 
+                                                class="form-control" autocomplete="off">
+                                                <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                        
+                                                    </span>
+                        
+                                            </div>
+                                           </div></div>
+                                    <div class="col"><div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                
+                                                    <input
+                                                    placeholder="Subject" formControlName="subject" 
+                                                    name="subject" 
+                                                    type="text" 
+                                                    class="form-control" autocomplete="off">
+                                                    <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                                        
+                                                        </span>
+                        
+                                            </div>
+                                           </div></div>
+                                </div>
+                               
+                               
+                                   <div class="row">
+                                        <div class="col"><div class="form-group">
+                                                <div class="form-group">
+                                                    <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                    <textarea rows="6"
+                                                        placeholder="Message" formControlName="message" 
+                                                        name="message" 
+                                                        type="text" 
+                                                        class="form-control" autocomplete="off"></textarea>
+                                                        <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                            
+                                                            </span>
+                        
+                                                </div>
+                                               </div></div>
+                                       
+                                    </div>
+                                   
+                           </div>
+                           <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                        </form>
+                    </div>
+        </div>
+    </div>
+</div>

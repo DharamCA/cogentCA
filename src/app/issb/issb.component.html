@@ -1,0 +1,125 @@
+<div class="container">
+        <div class="row"><div class="col lesspadding">
+                <img style="width:100%" src="https://www.e-startupindia.com/images/gst-arn-within-24-hours-gst-starter-guide-gst-invoice-guide-free-gst-payment-guide-5a06e5a9054e8triumph-guy-in-a-blue-jacket_1187-2991.jpg" data-lazyload-replaced="true">
+            </div>
+        </div>
+            <div class="row">
+                <div class="col lesspadding mt-5">
+                <h4>ISO Super Saver Bonanza</h4>
+                <h3><i class="fa fa-inr" aria-hidden="true"></i> 6999 all-inclusive</h3>
+                                        <h4>Package Includes</h4>	
+                <ul class="check-list">
+                                                <li>ISO Certification with 7 days Ad promotion </li>
+                                            </ul>
+            <hr>
+
+                <h4>Why this package ?</h4>
+         
+            <h3><strong>ISO Certification</strong></h3>
+
+<p>ISO certification is a very essential requirement for enhancing business recognition. It clearly emphasizes on achieving customer satisfaction for any general product or service. You will get&nbsp;the <strong>IAF accredited ISO certification</strong> that will helps business entity winning private &amp; public contracts.</p>
+
+<p>Above that, you will also get <strong>7 days ad promotion.</strong></p>                
+
+        <hr>
+        <div class="main-form mt-5 mb-5" style="width: 50%;">
+                <h4 class="text-center text-uppercase"><b>Grab The Offer</b></h4>
+                <p class="text-center mb-5">Why wait Submit below form &amp; catch the best deal</p>
+                <form [formGroup]="login" novalidate class="form">
+                        <div class="ui-form-wraper">
+                           <p class="text-center text-white">{{title}}</p>
+                           <div class="row">
+                               <div class="col"><div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Name"
+                                        formControlName="name" 
+                                        name="name" 
+                                        type="text" 
+                                        class="form-control" autocomplete="off">
+                                        <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                            
+                                        </span>
+                                        
+                                    </div>
+                                   </div></div>
+                               <div class="col"><div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                        <input
+                                        placeholder="Email Address" formControlName="email" 
+                                        name="email" 
+                                        type="email"
+                                        class="form-control" autocomplete="off">
+                                        <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                        
+                                                </span>
+                                                <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                            
+                                                </span>
+                                        </div>
+                                </div>
+                                   </div></div>
+                           </div>
+                           
+                           
+                           <div class="row">
+                                <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                            <input 
+                                            placeholder="Mobile No." formControlName="mobile" 
+                                            name="mobile" 
+                                            type="number" 
+                                            class="form-control" autocomplete="off">
+                                            <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                                    
+                                                </span>
+                    
+                                        </div>
+                                       </div></div>
+                                <div class="col"><div class="form-group">
+                                        <div class="form-group">
+                                            <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                            
+                                                <input
+                                                placeholder="Subject" formControlName="subject" 
+                                                name="subject" 
+                                                type="text" 
+                                                class="form-control" autocomplete="off">
+                                                <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                                    
+                                                    </span>
+                    
+                                        </div>
+                                       </div></div>
+                            </div>
+                           
+                           
+                               <div class="row">
+                                    <div class="col"><div class="form-group">
+                                            <div class="form-group">
+                                                <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                                <textarea rows="6"
+                                                    placeholder="Message" formControlName="message" 
+                                                    name="message" 
+                                                    type="text" 
+                                                    class="form-control" autocomplete="off"></textarea>
+                                                    <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                        
+                                                        </span>
+                    
+                                            </div>
+                                           </div></div>
+                                   
+                                </div>
+                               
+                       </div>
+                       <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+                    </form>
+                </div>
+</div>
+</div>
+</div>

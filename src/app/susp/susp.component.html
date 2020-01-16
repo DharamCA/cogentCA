@@ -1,0 +1,137 @@
+<div class="container">
+    <div class="row">
+        <div class="col lesspadding">
+        <img style="width: 100%;" src="https://www.e-startupindia.com/images/gst-registration-msme-registration-digital-signature-59d887f960039get-st-registration.jpg" data-lazyload-replaced="true">
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col mt-5 lesspadding">
+            <h4 class="text-uppercase"><b>Startup Kickstart Package</b></h4>
+            <h5><i class="fa fa-inr" aria-hidden="true"></i> 3199 all-inclusive</h5>
+            <h4 class="text-uppercase"><b>Package Includes</b></h4>	
+            <ul class="list-check">
+                <li>GST Registration  </li>
+                <li> MSME Registration  </li>
+                <li> Digital Signature </li>
+            </ul>
+       
+        <hr>
+
+       
+            <h4 class="text-uppercase"><b>Why this package ?</b></h4>
+       
+
+        <h4 class="text-uppercase"><strong>GST Registration</strong></h4>
+
+<p>Goods and Service Tax Number (GSTIN) is a unified&nbsp;indirect tax which mandatorily requires&nbsp;to register&nbsp;once business annual turnover&nbsp;exceeds INR 19 Lac. Generally, small business entity voluntarily applies for&nbsp;GSTIN&nbsp;even before crossing the above threshold turnover limit of INR 19 Lacs. It helps a startup to open a current bank account in the name of sole proprietor firm, avail input credit of taxes paid on the purchase, deal with MNCs easily and to sell the product in E-commerce portals like Flipkart,&nbsp;Amazon, and others.</p>
+
+<h4 class="text-uppercase"><strong>MSME Registration</strong></h4>
+
+<p>MSME registration is useful for small businesses and enterprises to get&nbsp;enroll&nbsp;with Ministry of Micro, small and medium enterprises. It helps you to take benefits and incentives from state government as well as from central government. It is also treated as a proof of business existence for a sole proprietor.</p>
+
+<h4 class="text-uppercase"><strong>Digital Signature</strong></h4>
+
+<p>Digital Signature also&nbsp;known&nbsp;as DSC is a USB pen drive protected by a password which is&nbsp;used&nbsp;to apply signature online on various occasions such as at the time GST registration, tax return filing, company formation and other legal matters.&nbsp;</p>               
+    <hr>
+   <div class="main-form mt-5 mb-5" style="width: 50%;">
+        <h4 class="text-center text-uppercase"><b>Grab The Offer</b></h4>
+        <p class="text-center mb-5">Why wait Submit below form &amp; catch the best deal</p>
+        <form [formGroup]="login" novalidate class="form">
+                <div class="ui-form-wraper">
+                   <p class="text-center text-white">{{title}}</p>
+                   <div class="row">
+                       <div class="col"><div class="form-group">
+                            <div class="form-group">
+                                <!-- <label for="name">Full Name<span class="text-danger">*</span></label> -->
+                                <input
+                                placeholder="Name"
+                                formControlName="name" 
+                                name="name" 
+                                type="text" 
+                                class="form-control" autocomplete="off">
+                                <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                                    
+                                </span>
+                                
+                            </div>
+                           </div></div>
+                       <div class="col"><div class="form-group">
+                            <div class="form-group">
+                                <!-- <label for="email">Email<span class="text-danger">*</span></label> -->
+                                <input
+                                placeholder="Email Address" formControlName="email" 
+                                name="email" 
+                                type="email"
+                                class="form-control" autocomplete="off">
+                                <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                                        <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                                
+                                        </span>
+                                        <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                                    
+                                        </span>
+                                </div>
+                        </div>
+                           </div></div>
+                   </div>
+                   
+                   
+                   <div class="row">
+                        <div class="col"><div class="form-group">
+                                <div class="form-group">
+                                    <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                    <input 
+                                    placeholder="Mobile No." formControlName="mobile" 
+                                    name="mobile" 
+                                    type="number" 
+                                    class="form-control" autocomplete="off">
+                                    <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                            
+                                        </span>
+            
+                                </div>
+                               </div></div>
+                        <div class="col"><div class="form-group">
+                                <div class="form-group">
+                                    <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                    
+                                        <input
+                                        placeholder="Subject" formControlName="subject" 
+                                        name="subject" 
+                                        type="text" 
+                                        class="form-control" autocomplete="off">
+                                        <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                            
+                                            </span>
+            
+                                </div>
+                               </div></div>
+                    </div>
+                   
+                   
+                       <div class="row">
+                            <div class="col"><div class="form-group">
+                                    <div class="form-group">
+                                        <!-- <label for="mobile">Subject<span class="text-danger">*</span></label>-->
+                                        <textarea rows="6"
+                                            placeholder="Message" formControlName="message" 
+                                            name="message" 
+                                            type="text" 
+                                            class="form-control" autocomplete="off"></textarea>
+                                            <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                                
+                                                </span>
+            
+                                    </div>
+                                   </div></div>
+                           
+                        </div>
+                       
+               </div>
+               <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

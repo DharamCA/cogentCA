@@ -67,6 +67,13 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
 import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
 import { AdministratorpageComponent } from './administratorpage/administratorpage.component';
+import { SuspComponent } from './susp/susp.component';
+import { ScpComponent } from './scp/scp.component';
+import { BpcComponent } from './bpc/bpc.component';
+import { GsspComponent } from './gssp/gssp.component';
+import { GrapComponent } from './grap/grap.component';
+import { IssbComponent } from './issb/issb.component';
+import { FsbComponent } from './fsb/fsb.component';
 
 
 const routes: Routes = [
@@ -136,7 +143,14 @@ const routes: Routes = [
   {path:'privacypolicy', component:PrivacypolicyComponent},
   {path:'refundpolicy', component:RefundpolicyComponent},
   {path:'confidentialpolicy', component:ConfidentialpolicyComponent},
-  {path:'administratorpage', component:AdministratorpageComponent}
+  {path:'administratorpage', component:AdministratorpageComponent},
+  {path:'susp', component:SuspComponent},
+  {path:'scp', component:ScpComponent},
+  {path:'bpc', component:BpcComponent},
+  {path:'gssp', component:GsspComponent},
+  {path:'grap', component:GrapComponent},
+  {path:'issb', component:IssbComponent},
+  {path:'fsb', component:FsbComponent}
   
 ];
 

@@ -6,11 +6,11 @@ import { FormService } from '../_service/form.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-contactus',
-  templateUrl: './contactus.component.html',
-  styleUrls: ['./contactus.component.css']
+  selector: 'app-scp',
+  templateUrl: './scp.component.html',
+  styleUrls: ['./scp.component.css']
 })
-export class ContactusComponent implements OnInit {
+export class ScpComponent implements OnInit {
 
   
 title:"Ram";

@@ -1,74 +1,117 @@
-<!-- <form [formGroup]="loginsss" novalidate class="form">
-  <div class="ui-form-wraper">
-     <p class="text-center text-white">{{title}}</p>
-     <div class="form-group">
-      <div class="form-group">
-          <input
-          placeholder="Name"
-          formControlName="name" 
-          name="name" 
-          type="text" 
-          class="form-control" autocomplete="off">
-          <span class="text-danger" *ngIf="loginsss.get('name').touched && loginsss.get('name').invalid">
-             
-          </span>
-          
-      </div>
-     </div>
-     <div class="form-group">
-      <div class="form-group">
-          <input
-          placeholder="Email Address" formControlName="email" 
-          name="email" 
-          type="email"
-          class="form-control" autocomplete="off">
-          <div *ngIf="loginsss.get('email').touched && loginsss.get('email').invalid">
-                  <span class="text-danger"  *ngIf="loginsss.get('email').errors.required">
-                          
-                  </span>
-                  <span class="text-danger"  *ngIf="loginsss.get('email').errors.pattern">
-                              
-                  </span>
-          </div>
-  </div>
-     </div>
-     <div class="form-group">
-      <div class="form-group">
-          <input 
-          placeholder="Mobile No." formControlName="mobile" 
-          name="mobile" 
-          type="number" 
-          class="form-control" autocomplete="off">
-          <span class="text-danger" *ngIf="loginsss.get('mobile').touched && loginsss.get('mobile').invalid">
-                  
-              </span>
-          
-          
-              <input hidden
-              placeholder="Subject" formControlName="subject" 
-              name="subject" 
-              type="text" 
-              class="form-control" autocomplete="off" [(ngModel)]="subject4">
+<!-- <form [formGroup]="login" novalidate class="form">
+    <div class="ui-form-wraper">
+       <p class="text-center text-white">{{title}}</p>
+       <div class="row">
+           <div class="col"><div class="form-group">
+                <div class="form-group">
+                    <input
+                    placeholder="Name"
+                    formControlName="name" 
+                    name="name" 
+                    type="text" 
+                    class="form-control" autocomplete="off">
+                    <span class="text-danger" *ngIf="login.get('name').touched && login.get('name').invalid">
+                        
+                    </span>
+                    
+                </div>
+               </div></div>
+           <div class="col"><div class="form-group">
+                <div class="form-group">
+                    <input
+                    placeholder="Email Address" formControlName="email" 
+                    name="email" 
+                    type="email"
+                    class="form-control" autocomplete="off">
+                    <div *ngIf="login.get('email').touched && login.get('email').invalid">
+                            <span class="text-danger"  *ngIf="login.get('email').errors.required">
+                                    
+                            </span>
+                            <span class="text-danger"  *ngIf="login.get('email').errors.pattern">
+                                        
+                            </span>
+                    </div>
+            </div>
+               </div></div>
+       </div>
+       
+       
+       <div class="row">
+            <div class="col"><div class="form-group">
+                    <div class="form-group">
+                        <input 
+                        placeholder="Mobile No." formControlName="mobile" 
+                        name="mobile" 
+                        type="number" 
+                        class="form-control" autocomplete="off">
+                        <span class="text-danger" *ngIf="login.get('mobile').touched && login.get('mobile').invalid">
+                                
+                            </span>
 
-              <input hidden
-              placeholder="Message" formControlName="message" 
-              name="message" 
-              type="text" 
-              class="form-control" autocomplete="off" [(ngModel)]="message4">
-      </div>
-     </div>
-  </div>
- <button [disabled]="loginsss.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit3()">Submit</button>
-</form>  -->
+                    </div>
+                   </div></div>
+            <div class="col"><div class="form-group">
+                    <div class="form-group">
+                        
+                            <input
+                            placeholder="Subject" formControlName="subject" 
+                            name="subject" 
+                            type="text" 
+                            class="form-control" autocomplete="off">
+                            <span class="text-danger" *ngIf="login.get('subject').touched && login.get('subject').invalid">
+                                
+                                </span>
+
+                    </div>
+                   </div></div>
+        </div>
+       
+       
+           <div class="row">
+                <div class="col"><div class="form-group">
+                        <div class="form-group">
+                            <textarea rows="6"
+                                placeholder="Message" formControlName="message" 
+                                name="message" 
+                                type="text" 
+                                class="form-control" autocomplete="off"></textarea>
+                                <span class="text-danger" *ngIf="login.get('message').touched && login.get('message').invalid">
+                                    
+                                    </span>
+
+                        </div>
+                       </div></div>
+               
+            </div>
+           
+   </div>
+   <button [disabled]="login.invalid" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">Submit</button>
+</form> -->
 
 
 
-<!-- <div>
-  subject4 = "Not Founs Ansrwe our Question";
-  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the same.";
 
 
-  loginsss = new FormGroup({
+<!-- 
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { HttpClient, HttpHeaders, HttpErrorResponse }    from '@angular/common/http';
+import { EventEmitter } from 'events';
+import { FormService } from '../_service/form.service';
+import { Router } from '@angular/router';
+
+
+title:"Ram";
+  posts: any;
+  data: any;
+  
+  constructor(private products: FormService, private router: Router) { }
+
+  ngOnInit() {
+    this.getdata();
+  }
+
+  login = new FormGroup({
     name : new FormControl('',Validators.required),
     email : new FormControl('', [
       Validators.required,
@@ -80,15 +123,25 @@
  }
  );
 
- 
-onSubmit3(){
-  this.products.adddata(this.loginsss.value)
+ getdata(){
+  this.products.getdata().subscribe(
+    res => {
+      this.posts = res;
+      console.log(this.posts);
+    }
+  );
+}
+
+onSubmit(){
+  this.products.adddata(this.login.value)
   .subscribe(data => {
     console.log(this.data);
     
   })
   alert("Data submitted successfuly");
-    this.loginsss.reset();
-  }
+    this.login.reset();
+}
 
-</div> -->
+}
+
+ -->

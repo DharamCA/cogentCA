@@ -6,11 +6,11 @@ import { FormService } from '../_service/form.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-contactus',
-  templateUrl: './contactus.component.html',
-  styleUrls: ['./contactus.component.css']
+  selector: 'app-issb',
+  templateUrl: './issb.component.html',
+  styleUrls: ['./issb.component.css']
 })
-export class ContactusComponent implements OnInit {
+export class IssbComponent implements OnInit {
 
   
 title:"Ram";
@@ -55,3 +55,4 @@ alert("Data submitted successfuly");
 }
 
 }
+

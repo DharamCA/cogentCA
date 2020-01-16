@@ -72,6 +72,13 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 import { RefundpolicyComponent } from './refundpolicy/refundpolicy.component';
 import { ConfidentialpolicyComponent } from './confidentialpolicy/confidentialpolicy.component';
 import { AdministratorpageComponent } from './administratorpage/administratorpage.component';
+import { SuspComponent } from './susp/susp.component';
+import { ScpComponent } from './scp/scp.component';
+import { BpcComponent } from './bpc/bpc.component';
+import { GsspComponent } from './gssp/gssp.component';
+import { GrapComponent } from './grap/grap.component';
+import { IssbComponent } from './issb/issb.component';
+import { FsbComponent } from './fsb/fsb.component';
 
 @NgModule({
   declarations: [
@@ -142,7 +149,14 @@ import { AdministratorpageComponent } from './administratorpage/administratorpag
     PrivacypolicyComponent,
     RefundpolicyComponent,
     ConfidentialpolicyComponent,
-    AdministratorpageComponent
+    AdministratorpageComponent,
+    SuspComponent,
+    ScpComponent,
+    BpcComponent,
+    GsspComponent,
+    GrapComponent,
+    IssbComponent,
+    FsbComponent
   ],
   imports: [
     BrowserModule,
