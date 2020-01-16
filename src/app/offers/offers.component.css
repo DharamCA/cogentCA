@@ -1,0 +1,76 @@
+.col.lesspadding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width:480px){
+    .col{
+        flex-basis: unset;
+        width: 100%;
+    }
+}
+
+.mainbox{
+    padding: 5px;
+    text-align: center;
+}
+
+.mainbox .banner{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #ffcc00;
+    font-size: 20px;
+    padding: 10px 0;
+    position: relative;
+    
+}
+
+.border-top{
+    border-top:solid 2px #cccccc !important;
+}
+
+.mainbox:hover{
+    box-shadow: 0 0 5px 5px #cccccc;
+    border-radius: 5px;
+}
+
+.mainbox:hover .banner{
+    -webkit-transition: transform 900ms cubic-bezier(0.58, 0.07, 0.74, 0.93);
+    -moz-transition: transform 900ms cubic-bezier(0.58, 0.07, 0.74, 0.93);
+    -ms-transition: transform 900ms cubic-bezier(0.58, 0.07, 0.74, 0.93);
+    transition: transform 900ms cubic-bezier(0.58, 0.07, 0.74, 0.93);
+    transform: rotatex(-360deg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* transition: 2s transform; */
+}
+
+.mainbox .banner .arrow{
+    border-top: 5px;
+    border-left: 5px transparent;
+    border-right: 5px transparent;
+    border-style: solid;
+    border-bottom: 0;
+    border-width: 10px;
+    position: absolute;
+    bottom: -9px;
+    border-top-color: #ffcc00;
+}
+
+.mainbox img{
+    width: 100%;
+}
+
+.mainbox p{
+    font-weight: 600;
+}
+
+.crossline{
+    text-decoration: line-through;
+}
+
+.a-letter:hover{
+    letter-spacing: 3px;
+    transition: 1s letter-spacing;
+}
