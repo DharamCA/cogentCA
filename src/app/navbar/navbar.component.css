@@ -101,6 +101,21 @@ a{
     margin:0 0 0 auto !important;
 }
 
+@media screen and (max-width:786px){
+    .navbar-right.float-right{
+        margin:0 !important;
+        float: left !important;
+        width:100% !important;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu.extraspace {
+        left: -100px;
+    }
+}
+
 @media screen and (max-width:480px){
     .navbar-right.float-right{
         margin:0 !important;

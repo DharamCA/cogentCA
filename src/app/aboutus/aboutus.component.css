@@ -103,3 +103,15 @@
 .box-center{
     margin: 0 auto;
 }
+
+@media screen and (max-width:786px){
+    .part {
+        width: 90%;
+        margin: 25px auto;
+        position: static;
+    }
+    .aboutimage{
+        height: 350px;
+        opacity: 1;
+    }
+}

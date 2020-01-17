@@ -109,3 +109,9 @@ ul.list-check li:before{
         color: #000000;
     }
 }
+
+@media screen and (max-width:1024){
+    body{
+        width: 100%;
+    }
+}
