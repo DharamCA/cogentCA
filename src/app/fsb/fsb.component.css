@@ -6,3 +6,18 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+@media screen and (max-width:480px){
+    .lesspadding{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-form{
+        width: 100% !important;
+    }
+
+    .col {
+        flex-basis: unset;
+    }
+}

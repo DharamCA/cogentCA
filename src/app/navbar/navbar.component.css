@@ -101,6 +101,41 @@ a{
     margin:0 0 0 auto !important;
 }
 
+@media screen and (max-width:480px){
+    .navbar-right.float-right{
+        margin:0 !important;
+        float: left !important;
+        width:100% !important;
+    }
+    .dropdown-menu.show{
+        width: 100% !important;
+    }
+
+    .mobile-hide{
+        display: none !important;
+    }
+
+    .subnav-align > .sublist-position {
+        position: static !important;
+        top: 0;
+        background: #cccccc;
+        left: 0;
+        font-weight: 600;
+        padding: 2px 0;
+    }
+}
+
+.subnav-align.dropdown-toggle::after {
+    position: absolute;
+    right: 7px;
+    top: 22px;
+}
+
+.nav-link.subnav-align, .nav-link.subnav {
+    font-weight: 400 !important;
+    text-transform: none;
+}
+
 .navbar.navbar-expand-lg{
     margin: 0 !important;
     padding: 0;

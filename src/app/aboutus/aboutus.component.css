@@ -7,6 +7,53 @@
     opacity: .3;
 }
 
+@media screen and (max-width:480px){
+    .aboutimage{
+        height: 200px;
+        opacity: 1;
+    }
+
+    .more{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+
+    .row.bgcolor.more .col{
+        flex-basis: unset !important;
+    }
+
+    .part {
+        width: 100% !important;
+        margin: 0 auto;
+        position: static !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        padding: 15px;
+    }
+
+    .part h4{
+        font-size: 24px !important;
+    }
+
+    .part p {
+        font-size: 14px !important;
+    }
+
+    .col-2.more {
+        display: none !important;
+    }
+
+    figure.float-right {
+        float: none !important;
+    }
+
+    figure.float-right img {
+        width: 100% !important;
+    }
+
+}
+
 .col.aboutimage p{
     opacity: 1 !important;
 }
