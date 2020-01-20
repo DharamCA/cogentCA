@@ -214,3 +214,7 @@ display: -webkit-box;
     background: #d4e4ef;
     margin-top:5px;
 }
+
+.bg-yellow {
+    background: #ffcc33;
+}
