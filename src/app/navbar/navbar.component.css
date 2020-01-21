@@ -77,7 +77,7 @@ a{
 }
 
 .subnav-align > .sublist-position.more-indent{
-    top:-100px;
+    top:-150px;
 }
 
 .dropdown-menu a{
@@ -206,7 +206,7 @@ li.nav-item, .text-uppercase{
 .logo1{
     background: #003399;
     padding: 5px;
-    color: #ffffff;
+    color: #ffcc33;
     font-size: 25px;
     display: inline-block;
 }
@@ -236,4 +236,34 @@ li.nav-item, .text-uppercase{
     text-transform: none;
     border-bottom: solid 1px #5f10104a;
     background: linear-gradient(45deg, #666666, transparent);
+}
+
+.show{
+    display: block !important;
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 267px;
+    right: 6px;
+    z-index: 99;
+    border: none;
+    outline: 0;
+    background-color: #27cfdb;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+
+#myBtn:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
 }
