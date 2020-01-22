@@ -26,56 +26,47 @@
     <div class="col">
         <br /><br />
         <form [formGroup]="careerform" novalidate class="form">
-            <div class="row">
-            <div class="col">
             <div class="form-group">
-                <label for="name">Position Name <span class="text-danger" *ngIf="careerform.get('name').touched && careerform.get('name').invalid">
+                <label for="name">Position Name <span class="text-danger" *ngIf="careerform.get('position').touched && careerform.get('position').invalid">
                         -- not be blank
                     </span></label>
-                <input type="text" class="form-control" name="name" id="name" formControlName="name" autocomplete="off">
+                <input type="text" class="form-control" name="position" id="position" formControlName="position" autocomplete="off">
             </div>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col">
+        
             <div class="form-group">
-                <label for="model">No. Of Opening <span class="text-danger" *ngIf="careerform.get('opens').touched && careerform.get('opens').invalid">
+                <label for="model">Location <span class="text-danger" *ngIf="careerform.get('location').touched && careerform.get('location').invalid">
                         -- not be blank
                     </span></label>
-                <input type="text" class="form-control" name="opens" id="opens" formControlName="opens" autocomplete="off">
+                <input type="text" class="form-control" name="location" id="location" formControlName="location" autocomplete="off">
             </div>
-        </div>
-            </div>
-            <div class="row">
-        <div class="col">
+        
             <div class="form-group">
-                    <label for="lighttype">Location <span class="text-danger" *ngIf="careerform.get('location').touched && careerform.get('location').invalid">
+                <label for="mrp">Responsibilities <span class="text-danger" *ngIf="careerform.get('responce').touched && careerform.get('responce').invalid">
+                        -- not be blank
+                    </span></label>
+                <input type="text" class="form-control" name="responce" id="responce" formControlName="responce" autocomplete="off">
+            </div>
+        
+            <div class="form-group">
+                    <label for="lighttype">Education Requirement(s): <span class="text-danger" *ngIf="careerform.get('education').touched && careerform.get('education').invalid">
                             -- not be blank
                          </span></label>    
-
-                         <input type="text" class="form-control" name="location" id="location" formControlName="location" autocomplete="off">
-                  
-
+                         <input type="text" class="form-control" name="education" id="education" formControlName="education" autocomplete="off">
+        
                
             </div>
-            </div>
-           </div>
-           <div class="row">
-        <div class="col">
-            <label for="description">Application <span class="text-danger" *ngIf="careerform.get('description').touched && careerform.get('description').invalid">
-                -- not be blank
-</span></label>
-            <textarea rows="6"
-            formControlName="description" 
-            name="description" 
-            type="text" 
-            class="form-control"></textarea>
+            <div class="form-group">
+                <label for="lighttype">Message: <span class="text-danger" *ngIf="careerform.get('message').touched && careerform.get('message').invalid">
+                        -- not be blank
+                     </span></label>    
+                     <textarea rows="6" type="text" class="form-control" name="message" id="message" formControlName="message" autocomplete="off"></textarea>
+        
+           
         </div>
-        </div>
-    <br /><br />
-    <button [disabled]="careerform.invalid" class="btn btn-primary" (click)="addproduct()">Submit Product</button> &#160;&#160;&#160;      
-    <button [disabled]="careerform.invalid" class="btn btn-primary">Cancel</button>
-    </form>
+        <button [disabled]="careerform.invalid" class="btn btn-primary" (click)="addcareer()">Submit Product</button> &#160;&#160;&#160;      
+        <button [disabled]="careerform.invalid" class="btn btn-primary">Cancel</button>
+            
+        </form>
         <br /><br />
     </div>
 </div>
@@ -84,28 +75,28 @@
 
 <div class="container">
 <div class="row border-bottom" *ngFor="let post of data">
-    <div class="col-3">
-        <img src="../../assets/images/product/{{post.image}}" alt="">
-    </div>
-    <div class="col-6">
+    
+    <div class="col-9">
         <ul class="list-no-style">
-        <li><b>Position Name:</b> {{post.name}}</li>
-        <li><b>No. of Opening:</b> {{post.open}}</li>
-        <li><b>Location:</b> {{post.scolors}}</li>
-        <li><b>Description:</b> {{post.description}}</li>
+            <!-- <li>{{post.career_id}}</li> -->
+        <li><b>Position Name:</b> {{post.position}}</li>
+        <li><b>Location:</b> {{post.location}}</li>
+        <li><b>Responsibility:</b> {{post.responce}}</li>
+        <li><b>Education Requirement:</b> {{post.education}}</li>
+        <li><b>Description:</b> {{post.message}}</li>
         </ul>
     </div>
     <div class="col-3 text-right">
-        <button class="btn btn-success" (click)="updateitem(post)">Update</button> &#160;&#160;&#160; <button class="btn btn-danger" (click)="deleteitem(post)">Delete</button>
+       <button class="btn btn-danger" (click)="deleteitem(post)">Delete</button>
     </div>
    
 </div>
 </div>
 
 </div>
-<div id="menu1" class="container tab-pane fade"><br>
+<!-- <div id="menu1" class="container tab-pane fade"><br>
 <h3>Career Form</h3>
 
-</div>
+</div> -->
 </div>
 </div>

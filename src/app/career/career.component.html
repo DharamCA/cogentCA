@@ -10,6 +10,14 @@
                 <div class="row">
                     <div class="col mt-5 mb-5">
                         <p>CogentCA was founded with a belief that work is like a festival which worth celebrating every day. We take a great pride in creating a platform that empowers employees and is totally bias free, a platform different from command and control to power to the people. We have a mindset and passion to make our employee’s experience as dynamic, focused and information rich as possible.</p>
+<h3 class="text-center text-uppercase mt-5 mb-3 border-bottom pb-2">Current Opening </h3>
+                        <ul *ngFor="let dt of data" class="list-no-style border-bottom">
+                            <li><b>Position Name:</b> <br />{{dt.position}}<br /><br />
+                                <b>Location:</b> <br />{{dt.location}}<br /><br />
+                                <b>Responsibility:</b> <br />{{dt.responce}}<br /><br />
+                                <b>Education:</b> <br />{{dt.education}}<br /><br />
+                                <b>Message:</b> <br />{{dt.message}}</li>
+                                </ul>
                     </div>
                 </div>
             </div>

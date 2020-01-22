@@ -4,6 +4,7 @@ import { FormService } from '../_service/form.service';
 import { Router, Data } from '@angular/router';
 import { Productitem } from '../productitem';
 import { HttpClient } from '@angular/common/http';
+import { Career } from '../career';
 // import { User } from '../user';
 
 @Component({
@@ -16,6 +17,7 @@ export class AdministratorpageComponent implements OnInit {
   data: any;
   postdata: any;
   productitem: Productitem[];
+  career: Career[];
   productid= "LLI"
   imagevalue:string = null
   imagename:string = "" 
@@ -25,54 +27,50 @@ export class AdministratorpageComponent implements OnInit {
   constructor( private product:FormService, private router: Router, private _http:HttpClient) { }
 
   ngOnInit() {
-    //this.getproductdata()
+    this.getcareer();
   }
 
   careerform = new FormGroup({
-    name : new FormControl('',Validators.required),
-    opens : new FormControl('', Validators.required),
+    position : new FormControl('',Validators.required),
     location : new FormControl('', Validators.required),
-    description : new FormControl('', Validators.required)
+    responce : new FormControl('', Validators.required),
+    education : new FormControl('', Validators.required),
+    message : new FormControl('', Validators.required),
   });
 
-  // getproductdata(){
-  //   this.product.getproductdata().subscribe(
-  //     res => {
-  //       this.data = res;
-  //       console.log(this.data);
-  //     }
-  //   );
-  // }
-  
-  // addproduct(){
-  //   this.product.addproduct(this.productform.value)
-  //   .subscribe(data => {
-  //     console.log(this.data);
+  getcareer(){
+    this.product.getcareer().subscribe(
+      res => {
+        this.data = res;
+        console.log(this.data);
+      }
+    );
+  }
+
+  addcareer(){
+    this.product.addcareer(this.careerform.value)
+    .subscribe(data => {
+      console.log(this.data);
       
-  //   })
-  //   alert("Data submitted successfuly");
-  //     this.productform.reset();
-  //     this.router.navigate(['administratorpage']);
-  // }
+    })
+    alert("Data submitted successfuly");
+      this.careerform.reset();
+      this.router.navigate(['administratorpage']);
+  }
 
-  // deleteitem(post){
-  //   this.product.deletePost(post.product_id)
-  //   .subscribe( data => {
-  //     let postI = this.data.indexOf(post.product_id);
-  //     this.data.splice(postI, 1);
-  //     this.router.navigate(['administratorpage']);
-  //     console.log(this.data);
-  //   })
-  // }
+  deleteitem(post){
+    this.product.deletePost(post.career_id)
+    .subscribe( data => {
+      let postI = this.data.indexOf(post.career_id);
+      this.data.splice(postI, 1);
+      this.router.navigate(['administratorpage']);
+      console.log(this.data);
+    })
+  }
 
-  // updateitem(productitem: Productitem){
-  //   this.id = productitem.product_id;
+  // updateitem(career: Career){
+  //   this.id = career.career_id;
   //   this.router.navigate(['editpost/' + this.id]);
-  // }
-
-  // fileupload(event){
-  //   this.imagevalue = event.target.files[0].name;
-  //   console.log(event);
   // }
 
 }

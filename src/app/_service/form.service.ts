@@ -3,12 +3,14 @@ import { HttpClient, HttpHeaders, HttpErrorResponse }    from '@angular/common/h
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Contact } from '../contact';
+import { Career } from '../career';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormService {
 
+  career:Career[];
   contact: Contact[];
   errorData: {};
   httpOptions = {
@@ -25,6 +27,8 @@ export class FormService {
     return this.http.post('http://localhost/cogentca/insert.php', contact);
   }
 
+
+
   chechusernameandpass(uname:string, pwd:string){
     if(uname == "admin" && pwd == "admin1234"){
       localStorage.setItem('username',"admin");
@@ -36,7 +40,19 @@ export class FormService {
   }
 
 
+// ************Add and fetch career record************
 
+addcareer(career: Career){
+  return this.http.post('http://localhost/cogentca/career.php', career);
+}
+
+getcareer(){
+  return this.http.get<Career[]>('http://localhost/cogentca/listcareer.php');
+}
+
+deletePost(id:number){
+  return this.http.delete('http://localhost/cogentca'+'/deletepost.php?id='+ id);
+}
 
 
   private handleError(error: HttpErrorResponse) {
