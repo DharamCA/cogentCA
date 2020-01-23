@@ -44,11 +44,11 @@
     }
 
     .col.lesspadding{
-        height: 325px !important;
-        background-size: 100% 325px !important;
+        height: 250px !important;
+        background-size: 100% 250px !important;
     }
 
-    .mainpage[_ngcontent-mok-c3] {
+    .mainpage {
         margin: 0 auto;
         align-items: center;
         height: 200px;
@@ -145,42 +145,44 @@ a{
     margin-right:5px;
 }
 
-.carousel-caption{
+/* .carousel-caption{
     background: #dcdcdc;
     color: #000000;
-}
+} */
 
-/* .carousel-caption.one{
-    top: 121px;
+ .carousel-caption.one{
+    top: 155px;
     position: absolute;
-    width: 50%;
+    width: 30%;
     height: 10% !important;
-    left: 45px;
+    left: 145px;
+    color: #000000 !important;
 }
 
 .carousel-caption.two{
-    top: 121px;
+    top: 155px;
     position: absolute;
-    width: 50%;
+    width: 30%;
     height: 10% !important;
-    left: 45px;
+    left: 145px;
 }
 
 .carousel-caption.three{
-    top: 121px;
+    top: 155px;
     position: absolute;
-    width: 50%;
+    width: 30%;
     height: 10% !important;
-    left: 45px;
+    left: 145px;
+    color: #000000 !important;
 }
 
 .carousel-caption.four{
-    top: 121px;
+    top: 221px;
     position: absolute;
     width: 30%;
     height: 12% !important;
-    left: 660px !important;
-} */
+    left: 310px !important;
+} 
 
 .carousel-indicators li {
     height: 2px !important;
@@ -190,13 +192,15 @@ a{
     
 }
 
-/* .carousel-caption.five{
-    top: 121px;
+.carousel-caption.five{
+    top: 89px;
     position: absolute;
     width: 50%;
-    height: 10% !important;
-    left: 45px;
-} */
+    height: 300px !important;
+    left: 187px;
+    color: #000000;
+    background: linear-gradient(45deg, #ccc, transparent);
+}
 
 .carousel-caption p{
     margin-bottom: 0;
@@ -217,4 +221,18 @@ display: -webkit-box;
 
 .bg-yellow {
     background: #ffcc33;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    left: 10%;
+    height: 100vh;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
 }
