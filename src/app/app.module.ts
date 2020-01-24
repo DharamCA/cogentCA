@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ChatModule } from './chat/chat.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -79,6 +81,7 @@ import { GsspComponent } from './gssp/gssp.component';
 import { GrapComponent } from './grap/grap.component';
 import { IssbComponent } from './issb/issb.component';
 import { FsbComponent } from './fsb/fsb.component';
+import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
 @NgModule({
   declarations: [
@@ -163,7 +166,8 @@ import { FsbComponent } from './fsb/fsb.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ChatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

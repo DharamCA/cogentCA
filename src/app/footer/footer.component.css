@@ -138,7 +138,9 @@ h4{
 
 .main.active{
     height: 400px; 
+    overflow: hidden;
 }
+
 
 .main .col{
     background: #cccccc;
@@ -158,4 +160,8 @@ h4{
 
 .fa{
     cursor: pointer;
+}
+
+.chatbox{
+    height: 353px;
 }

@@ -1,0 +1,15 @@
+
+<div class="textbody">
+<div *ngFor="let message of messages | async" class="msgbox">
+<div class="message" [ngClass]="{
+'to': message.sentBy === 'user',
+'from':message.sentBy === 'bot'
+}">
+
+{{ message.content }}
+</div>
+</div>
+</div>
+<div class="botmain">
+<input class="form-control" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+</div>
