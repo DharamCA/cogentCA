@@ -20,11 +20,11 @@ export class FormService {
   constructor(private http:HttpClient) { }
 
   getdata(){
-    return this.http.get<Contact[]>('http://localhost/cogentca/list.php');
+    return this.http.get<Contact[]>('http://cogentca.com/cogentca/list.php');
   }
 
   adddata(contact: Contact){
-    return this.http.post('http://localhost/cogentca/insert.php', contact);
+    return this.http.post('http://cogentca.com/cogentca/insert.php', contact);
   }
 
 

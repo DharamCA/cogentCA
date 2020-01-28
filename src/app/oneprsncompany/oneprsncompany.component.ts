@@ -21,8 +21,8 @@ export class OneprsncompanyComponent implements OnInit {
   message2 = "Still confused about 'One Person Company', please provide Free Advisor Consultation.";
   subject3 = "Complete List of Document required";
   message3 = "Please share the list of required document for the One Person Company.";
-  subject4 = "Not Founs Ansrwe our Question";
-  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the One Person Company.";
+  subject4 = "Not Found Ansrwe our Question";
+  message4 = "Not Found Ansrwe our Question. Please arrange a call for the One Person Company.";
 
   constructor(private products: FormService, private router: Router) { }
 

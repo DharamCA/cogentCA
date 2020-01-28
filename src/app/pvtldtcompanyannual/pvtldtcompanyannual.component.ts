@@ -21,8 +21,8 @@ export class PvtldtcompanyannualComponent implements OnInit {
   message2 = "Still confused about 'Private Limited Company Annual Compliances', please provide Free Advisor Consultation.";
   subject3 = "Complete List of Document required";
   message3 = "Please share the list of required document for the Private Limited Company Annual Compliances.";
-  subject4 = "Not Founs Ansrwe our Question";
-  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the Private Limited Company Annual Compliances.";
+  subject4 = "Not Found Ansrwe our Question";
+  message4 = "Not Found Ansrwe our Question. Please arrange a call for the Private Limited Company Annual Compliances.";
 
   constructor(private products: FormService, private router: Router) { }
 
