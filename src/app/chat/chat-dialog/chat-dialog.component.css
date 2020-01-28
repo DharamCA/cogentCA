@@ -1,31 +1,16 @@
 .message.to{
     text-align: right;
+
+}
+.message.to, .message.from{
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.col.lesspadding{
+    padding: 0;
 }
 
 .botmain{
-    background: #cccccc;
-    width: 100%;
-    padding: 5px;
-    /* position: absolute;
-    bottom: 0; */
-}
-
-.textbody{
-    /* height: 306px; */
-    overflow-y: auto;
-    /* transform: rotate(180deg); */
-}
-
-.msgbox{
-    /* transform: rotate(180deg); */
-    /* display: table-footer-group; */
-}
-/* 
-.msgbox:nth-child(odd){
-    margin-top: -50px;
-} */
-
-.message.from{
-    text-align: left;
-    width: 298px;
+    margin-top: 10px;
 }

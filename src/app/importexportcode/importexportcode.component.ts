@@ -15,14 +15,14 @@ export class ImportexportcodeComponent implements OnInit {
   title:"Ram";
   posts: any;
   data: any;
-  subject1 = "Arrange a call about 'business plan project report'";
-  message1 = "I am Still confused about 'business plan project report', please arrange a call for the same.";
-  subject2 = "Still confused about 'business plan project report'";
-  message2 = "Still confused about 'business plan project report', please provide Free Advisor Consultation.";
+  subject1 = "Arrange a call about 'Import Export Code'";
+  message1 = "I am Still confused about 'Import Export Code', please arrange a call for the same.";
+  subject2 = "Still confused about 'Import Export Code'";
+  message2 = "Still confused about 'Import Export Code', please provide Free Advisor Consultation.";
   subject3 = "Complete List of Document required";
-  message3 = "Please share the list of required document for the same.";
+  message3 = "Please share the list of required document for the Import Export Code.";
   subject4 = "Not Founs Ansrwe our Question";
-  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the same.";
+  message4 = "Not Founs Ansrwe our Question. Please arrange a call for the Import Export Code.";
 
   constructor(private products: FormService, private router: Router) { }
 

@@ -164,4 +164,13 @@ h4{
 
 .chatbox{
     height: 353px;
+    vertical-align: bottom;
+    position: relative;
+    overflow-y: auto;
+}
+
+.chatbox .textbox{
+position: absolute;
+bottom: 0;
+width: 100%;
 }
