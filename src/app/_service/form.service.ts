@@ -20,11 +20,11 @@ export class FormService {
   constructor(private http:HttpClient) { }
 
   getdata(){
-    return this.http.get<Contact[]>('http://cogentca.com/cogentca/list.php');
+    return this.http.get<Contact[]>('https://cogentca.com/cogentca/list.php');
   }
 
   adddata(contact: Contact){
-    return this.http.post('http://cogentca.com/cogentca/insert.php', contact);
+    return this.http.post('https://cogentca.com/cogentca/insert.php', contact);
   }
 
 
@@ -43,15 +43,15 @@ export class FormService {
 // ************Add and fetch career record************
 
 addcareer(career: Career){
-  return this.http.post('http://localhost/cogentca/career.php', career);
+  return this.http.post('https://cogentca.com/cogentca/career.php', career);
 }
 
 getcareer(){
-  return this.http.get<Career[]>('http://localhost/cogentca/listcareer.php');
+  return this.http.get<Career[]>('https://cogentca.com/cogentca/listcareer.php');
 }
 
 deletePost(id:number){
-  return this.http.delete('http://localhost/cogentca'+'/deletepost.php?id='+ id);
+  return this.http.delete('https://cogentca.com/cogentca'+'/deletepost.php?id='+ id);
 }
 
 
