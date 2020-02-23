@@ -5,6 +5,7 @@
     position: relative;
 }
 
+
 .col.lesspadding{
     /* background: url(../../assets/images/banner.jpg) 0 0 no-repeat; */
     width: 100%;
@@ -30,7 +31,18 @@
     height: 500px;
 }
 
-@media screen and (max-width:768px){
+
+/* @media screen and (max-width: 768px) and (min-width: 600px) {
+    div.example {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+  } */
+
+
+@media screen and (max-width:768px) and (min-width:481px){
     .d-block {
         height: 330px;
     }
@@ -38,15 +50,23 @@
     .carousel-inner {
         height: 330px;
     }
+
+    .small-text{
+        font-size:25px;   
+    }
+
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px)and (min-width:769px){
     .d-block {
         height: 430px;
     }
     
     .carousel-inner {
         height: 430px;
+    }
+    .small-text{
+        font-size:25px;   
     }
 }
 
@@ -54,6 +74,9 @@
 @media screen and (max-width:480px){
     .figure-align{
         font-size: 20px;
+    }
+    .small-text{
+        font-size:80%;   
     }
 
     .d-block{
@@ -171,6 +194,12 @@ a{
     color: #000000;
 } */
 
+.carousel-caption p{
+    background: #cccccc;
+    display: block;
+    transition: 2s display;
+}
+
  .carousel-caption.one{
     top: 155px;
     position: absolute;
@@ -178,6 +207,7 @@ a{
     height: 10% !important;
     left: 145px;
     color: #000000 !important;
+    display: none;
 }
 
 .carousel-caption.two{
