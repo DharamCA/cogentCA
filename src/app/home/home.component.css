@@ -23,12 +23,33 @@
 }
 
 .d-block {
-    height: 550px;
+    height: 500px;
 }
 
 .carousel-inner {
-    height: 550px;
+    height: 500px;
 }
+
+@media screen and (max-width:768px){
+    .d-block {
+        height: 330px;
+    }
+    
+    .carousel-inner {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .d-block {
+        height: 430px;
+    }
+    
+    .carousel-inner {
+        height: 430px;
+    }
+}
+
 
 @media screen and (max-width:480px){
     .figure-align{
@@ -36,16 +57,16 @@
     }
 
     .d-block{
-        height: 250px;
+        height: 130px;
     }
 
     .carousel-inner, .carousel.slide.pointer-event {
-        height: 250px;
+        height: 130px;
     }
 
     .col.lesspadding{
-        height: 250px !important;
-        background-size: 100% 250px !important;
+        height: 130px !important;
+        background-size: 100% 130px !important;
     }
 
     .mainpage {
