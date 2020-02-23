@@ -27,15 +27,37 @@
       $(".subnav-align").mouseenter(function(){
         $(this).removeClass("hide");
         $(this).addClass("blocks");
-      })
+      });
       $(".subnav-align").mouseleave(function(){
         $(this).addClass("hide");
         $(this).removeClass("blocks");
-      })
+      });
       $(".carousel-caption").load(function(){
         $(this).fadeOut(1000);
+      });
+      $(".nav-link").click(function(){
+        $('*').removeClass("show");
+         $("li.nav-item.dropdown a").attr("aria-expanded","false");
+         $("li.nav-item.dropdown div:first-child").removeClass("show");
+        
       })
     })
+
+
+// $(document).ready(function(){
+//       $("li.nav-item.dropdown").mouseover(function(){
+//         $(this).addClass("show");
+//         $("li.nav-item.dropdown a").attr("aria-expanded","true");
+//         $("li.nav-item.dropdown div.dropdown-menu").addClass("show");
+//       })
+//       $("li.nav-item.dropdown").mouseout(function(){
+//         $(this).removeClass("show");
+//         $("li.nav-item.dropdown a").attr("aria-expanded","false");
+//         $("li.nav-item.dropdown div.dropdown-menu").removeClass("show");
+//       })
+//     })
+
+
 
     $(document).ready(function(){
       $(".main > .row").click(function(){
