@@ -281,6 +281,10 @@ display: -webkit-box;
     margin-top:5px;
 }
 
+.col.lesspadding.bg-lightgrey{
+    margin-top: 0 !important;
+}
+
 .bg-yellow {
     background: #ffcc33;
 }
@@ -298,3 +302,8 @@ display: -webkit-box;
     text-align: center;
     vertical-align: middle;
 } */
+
+
+.small-text{
+    font-weight: 600;
+}

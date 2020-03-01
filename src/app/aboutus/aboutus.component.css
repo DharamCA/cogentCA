@@ -115,3 +115,7 @@
         opacity: 1;
     }
 }
+
+img.circle{
+    border-radius: 100%;
+}
