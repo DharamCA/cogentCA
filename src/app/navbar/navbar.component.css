@@ -430,3 +430,60 @@ a .blinks{
     45%{color:#003399};
     95%{color: #ffcc33};
 }
+
+
+@media screen and (max-width:768px){
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "+";
+        border:none;
+        position: absolute;
+        right: 10px;
+        font-size: 20px;
+    }
+    
+    .nav-item.dropdown.show > .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "—";
+        border:none;
+        position: absolute;
+        right: 10px;
+        font-size: 13px;
+    }
+
+    .dropdown-menu.show > .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "+";
+        border:none;
+        position: absolute;
+        right: 10px;
+        top: 9px;
+        font-size: 20px;
+    }
+
+    .arrow-right{
+        display: none !important;
+    }
+
+    .dropdown-menu.show .nav-item.dropdown.show > .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "—";
+        border:none;
+        position: absolute;
+        right: 10px;
+        top: 9px;
+        font-size: 13px;
+    }
+
+    .sticky-top{
+        position: static !important;
+    }
+}

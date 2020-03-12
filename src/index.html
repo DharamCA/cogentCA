@@ -43,10 +43,13 @@
       })
     })
 
-// $(window).resize(function(){
+//  $(window).size(function(){
 
 if ($(document).width() < 769) {  
-  $("a.nav-link.subnav-align").attr("data-toggle","dropdown");
+  $(".dropdown-menu.show > a").attr("data-toggle","dropdown");
+}
+else{
+  $(".dropdown-menu.show > a").attr("data-toggle","dropdown-menu");
 }     
 
 // });
@@ -54,7 +57,6 @@ if ($(document).width() < 769) {
 // $(window).load(function(){
 //   $(".carousel-caption p").css({"display":"inline-block", "transition":"1s display"});
 // });
-
 
 
     $(document).ready(function(){
@@ -85,6 +87,16 @@ if ($(document).width() < 769) {
 
 });
    
+// $(document).ready(function(){
+//   $(".dropdown-menu.show > .nav-link.subnav-align.dropdown-toggle.arrow-image.top-border").click(function(){
+//     if($(".nav-link.subnav-align.dropdown-toggle.arrow-image.top-border.hide")){
+//     $(".nav-link.subnav-align.dropdown-toggle.arrow-image.top-border").hasClass("hide").replaceWith("blocks");
+//     }
+//     elseif{
+//       $(".nav-link.subnav-align.dropdown-toggle.arrow-image.top-border.blocks").hasClass("blocks").replaceWith("hide");
+//     }
+//   })
+// })
 
   </script>
 
