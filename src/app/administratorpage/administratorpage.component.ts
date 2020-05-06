@@ -23,6 +23,7 @@ export class AdministratorpageComponent implements OnInit {
   imagename:string = "" 
   fd:any
   id: any;
+  token: string;
 
   constructor( private product:FormService, private router: Router, private _http:HttpClient) { }
 
@@ -73,4 +74,11 @@ export class AdministratorpageComponent implements OnInit {
   //   this.router.navigate(['editpost/' + this.id]);
   // }
 
+
+  onLogout() {
+    this.token = null;
+    localStorage.removeItem('eq_user');
+    localStorage.clear();
+    this.router.navigate(['']);
+   }
 }
